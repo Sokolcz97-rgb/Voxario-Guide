@@ -14,4 +14,5 @@ VG.L.enUS = {
     NEXT_GUIDE = "Next recommended guide", COMPATIBLE = "Compatible", UNAVAILABLE = "Unavailable", NO_COMPATIBLE_GUIDES = "No compatible guides.",
     NAVIGATION = "Navigation", NO_WAYPOINT = "No active waypoint.", ARRIVED = "Arrived", SHOW_ARROW = "Show Navigation", SHOW_DISTANCE = "Show Distance", AUTO_COMPLETE = "Auto-complete GO_TO", CURRENT_LOCATION = "Current location", LOCATION_UNAVAILABLE = "Current location is unavailable.", TARGET = "Target",
     OVERLEVELED = "Above recommended level",
+    ZONE_SCANNER = "Zone Scanner", SCAN_COMPLETE = "Scan complete", SCAN_FAILED = "Zone scan failed", MAPS_DISCOVERED = "Maps discovered", ROOTS_SCANNED = "Roots scanned", ZONE_NOT_FOUND = "Zone not found", ZONE_EXPORT = "Zone Export", ZONE_DATABASE = "Zone Database", STATIC_DATA = "Static data", SCANNED_DATA = "Scanned data",
 }

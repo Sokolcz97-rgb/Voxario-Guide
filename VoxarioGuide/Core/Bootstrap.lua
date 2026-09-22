@@ -1,7 +1,7 @@
 local addonName, VG = ...
 
 VG.Name = addonName
-VG.Version = "0.5.0-alpha"
+VG.Version = "0.5.1-alpha"
 VG.Interface = 16001
 VG.Modules = VG.Modules or {}
 VG.L = VG.L or {}
@@ -34,6 +34,9 @@ function VG:InitializeDatabase()
     if type(db.settings.navigation.showArrow) ~= "boolean" then db.settings.navigation.showArrow = true end
     if type(db.settings.navigation.showDistance) ~= "boolean" then db.settings.navigation.showDistance = true end
     if type(db.settings.navigation.autoCompleteGoTo) ~= "boolean" then db.settings.navigation.autoCompleteGoTo = false end
+    if type(db.zoneScanner) ~= "table" then db.zoneScanner = {} end
+    if type(db.zoneScanner.maps) ~= "table" then db.zoneScanner.maps = {} end
+    if type(db.zoneScanner.roots) ~= "table" then db.zoneScanner.roots = {} end
     if type(db.guidePaused) ~= "boolean" then db.guidePaused = false end
     if type(db.completedSteps) ~= "table" then db.completedSteps = {} end
     if type(db.guideComplete) ~= "table" then db.guideComplete = {} end

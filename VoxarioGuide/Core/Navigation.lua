@@ -45,7 +45,8 @@ end
 function VG:ShowCurrentLocation()
     local mapID, x, y = self:GetNavigationLocation()
     if not mapID then self:Warn(self:T("LOCATION_UNAVAILABLE")); return end
-    self:Info(string.format("%s: MapID %s | %s", self:T("CURRENT_LOCATION"), mapID, self:FormatCoordinates(x, y)))
+    local zone = self:GetZone(mapID)
+    self:Info(string.format("%s: MapID %s | %s | %s | parent %s | %s", self:T("CURRENT_LOCATION"), mapID, self:FormatCoordinates(x, y), zone and zone.name or "?", zone and zone.parentMapID or "?", zone and zone.source or "unscanned"))
 end
 function VG:SetNavigationHere()
     local mapID, x, y = self:GetNavigationLocation()

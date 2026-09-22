@@ -16,6 +16,7 @@ end
 function VG:OnLogin()
     self:InitializeDatabase()
     self:InitializeRecorder(true)
+    self:InitializeZoneScanner()
     self:UpdatePlayerState()
     self:RefreshQuestState()
     self:CreateGuideFrame()
@@ -45,6 +46,15 @@ SlashCmdList.VOXARIOGUIDE = function(message)
     local command, argument = (message or ""):match("^%s*(%S*)%s*(.-)%s*$")
     command, argument = string.lower(command or ""), argument or ""
     if command == "help" then VG:ShowHelp()
+    elseif command == "zones" then
+        local action, rest = argument:match("^(%S*)%s*(.-)%s*$"); action = string.lower(action or "")
+        if action == "scan" and string.lower(rest) == "current" then VG:ScanCurrentZone()
+        elseif action == "scan" then VG:ScanZoneRoot(rest)
+        elseif action == "status" then VG:ShowZoneStatus()
+        elseif action == "find" then VG:FindZones(rest)
+        elseif action == "export" then VG:ShowZoneExport()
+        elseif action == "validate" then VG:ValidateZones()
+        else VG:Info("Usage: /vg zones scan current|<mapID>, status, find <name>, export, validate") end
     elseif command == "validate" then VG:ValidateRegisteredGuides()
     elseif command == "step" then
         local index = tonumber(argument); local guide = VG:GetCurrentGuide(); local total = VG:GetTotalSteps(guide)
@@ -75,6 +85,6 @@ SlashCmdList.VOXARIOGUIDE = function(message)
 end
 
 function VG:ShowHelp()
-    self:Info("/vg, /vg help, /vg guides, /vg status, /vg reset, /vg step <n>, /vg validate, /vg pause, /vg resume, /vg nav [clear], /vg navhere, /vg location, /vg debug, /vg devmode, /vg version")
+    self:Info("/vg, /vg help, /vg guides, /vg status, /vg reset, /vg step <n>, /vg validate, /vg zones, /vg pause, /vg resume, /vg nav [clear], /vg navhere, /vg location, /vg debug, /vg devmode, /vg version")
     self:Info("Recorder: /vg record start|stop|status|clear|export, /vg mark [note], /vg note <text>")
 end

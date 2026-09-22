@@ -14,4 +14,5 @@ VG.L.csCZ = {
     NEXT_GUIDE = "Dalsi doporuceny guide", COMPATIBLE = "Kompatibilni", UNAVAILABLE = "Nedostupne", NO_COMPATIBLE_GUIDES = "Zadne kompatibilni guides.",
     NAVIGATION = "Navigace", NO_WAYPOINT = "Zadny aktivni waypoint.", ARRIVED = "Dorazili jste", SHOW_ARROW = "Zobrazit navigaci", SHOW_DISTANCE = "Zobrazit vzdalenost", AUTO_COMPLETE = "Automaticky dokoncit GO_TO", CURRENT_LOCATION = "Aktualni pozice", LOCATION_UNAVAILABLE = "Aktualni pozice neni dostupna.", TARGET = "Cil",
     OVERLEVELED = "Nad doporucenou urovni",
+    ZONE_SCANNER = "Zone Scanner", SCAN_COMPLETE = "Sken dokoncen", SCAN_FAILED = "Sken zony selhal", MAPS_DISCOVERED = "Nalezene mapy", ROOTS_SCANNED = "Naskenovane koreny", ZONE_NOT_FOUND = "Zona nenalezena", ZONE_EXPORT = "Export zon", ZONE_DATABASE = "Databaze zon", STATIC_DATA = "Staticka data", SCANNED_DATA = "Naskenovana data",
 }
