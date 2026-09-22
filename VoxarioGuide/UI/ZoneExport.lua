@@ -54,7 +54,11 @@ end
 function VG:ShowZoneExport()
     local maps = self:GetScannedMaps()
     if not next(maps) then self:Warn("No scanned zone data available. Run /vg zones scan current or /vg zones scan <mapID> first."); return end
-    local frame, export = self:CreateZoneExportFrame(), self:BuildZoneExport(maps)
-    frame.edit:SetText(export); frame.edit:SetHeight(math.max(380, frame.edit:GetStringHeight() + 20)); frame:Show(); frame.edit:SetFocus(); frame.edit:HighlightText()
+    local export = self:BuildZoneExport(maps)
+    if type(export) ~= "string" or export == "" then self:Warn("Zone export could not be generated."); return end
+    local frame = self:CreateZoneExportFrame()
+    frame.edit:SetText(export)
+    frame:Show(); frame.edit:SetFocus(); frame.edit:HighlightText()
+    self:Debug("Zone export window displayed")
     self:Debug("Export edit box text: " .. #(frame.edit:GetText() or "") .. " bytes")
 end
