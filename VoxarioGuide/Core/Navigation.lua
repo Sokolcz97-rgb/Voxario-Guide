@@ -30,11 +30,22 @@ function VG:GetWaypointDistance() return nil end -- TODO VERIFY FOREVER API: map
 function VG:GetWaypointDirection() return nil end -- TODO VERIFY FOREVER API: no verified facing conversion.
 
 function VG:GetNavigationLocation()
-    local mapID = self:GetPlayerMapID()
-    if not mapID or not C_Map or not C_Map.GetPlayerMapPosition then return nil end
+    local context = self:GetCurrentMapContext()
+    if not context then return nil end
+    return context.mapID, context.x, context.y
+end
+function VG:GetCurrentMapContext()
+    local mapID, reason = self:GetPlayerMapID()
+    if not mapID then return nil, reason end
+    local context = { mapID = mapID }
+    if C_Map and C_Map.GetMapInfo then local ok, info = pcall(C_Map.GetMapInfo, mapID); if ok and type(info) == "table" then context.mapInfo = info end end
+    if not C_Map or not C_Map.GetPlayerMapPosition then return context, "C_Map.GetPlayerMapPosition is unavailable" end
     local ok, position = pcall(C_Map.GetPlayerMapPosition, "player", mapID)
-    if not ok or not position or type(position.x) ~= "number" or type(position.y) ~= "number" then return nil end
-    return mapID, position.x, position.y
+    if not ok then return context, "C_Map.GetPlayerMapPosition errored" end
+    if not position then return context, "C_Map.GetPlayerMapPosition returned nil for mapID " .. mapID end
+    if type(position.x) ~= "number" or type(position.y) ~= "number" then return context, "player position has no numeric x/y" end
+    context.x, context.y = position.x, position.y
+    return context
 end
 
 function VG:ShowNavigationStatus()
@@ -43,13 +54,14 @@ function VG:ShowNavigationStatus()
     self:Info(string.format("%s: active | MapID: %s | %s | %s", self:T("NAVIGATION"), point.mapID, self:GetWaypointText() or "?", point.label or self:T("WAYPOINT")))
 end
 function VG:ShowCurrentLocation()
-    local mapID, x, y = self:GetNavigationLocation()
-    if not mapID then self:Warn(self:T("LOCATION_UNAVAILABLE")); return end
-    local zone = self:GetZone(mapID)
-    self:Info(string.format("%s: MapID %s | %s | %s | parent %s | %s", self:T("CURRENT_LOCATION"), mapID, self:FormatCoordinates(x, y), zone and zone.name or "?", zone and zone.parentMapID or "?", zone and zone.source or "unscanned"))
+    local context, reason = self:GetCurrentMapContext()
+    if not context then self:Warn(reason or self:T("LOCATION_UNAVAILABLE")); return end
+    local zone, info = self:GetZone(context.mapID), context.mapInfo
+    self:Info(string.format("%s: MapID %s | %s | X/Y %s | type %s | parent %s | %s", self:T("CURRENT_LOCATION"), context.mapID, (zone and zone.name) or (info and info.name) or "Unavailable", context.x and self:FormatCoordinates(context.x, context.y) or "Unavailable", (zone and zone.mapType) or (info and info.mapType) or "Unavailable", (zone and zone.parentMapID) or (info and info.parentMapID) or "Unavailable", zone and zone.source or "unscanned"))
+    if reason then self:Warn(reason) end
 end
 function VG:SetNavigationHere()
-    local mapID, x, y = self:GetNavigationLocation()
-    if not mapID then self:Warn(self:T("LOCATION_UNAVAILABLE")); return false end
-    return self:SetWaypoint(mapID, x, y, self:T("CURRENT_LOCATION"))
+    local context, reason = self:GetCurrentMapContext()
+    if not context or not context.x then self:Warn(reason or self:T("LOCATION_UNAVAILABLE")); return false end
+    return self:SetWaypoint(context.mapID, context.x, context.y, self:T("CURRENT_LOCATION"))
 end

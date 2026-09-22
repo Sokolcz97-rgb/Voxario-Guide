@@ -31,7 +31,7 @@ function VG:ScanZoneRoot(rootID)
     end
     scan(rootID, 0); scanner.roots[rootID] = true; scanner.lastScan = time(); self:Info(string.format("%s: %d", self:T("SCAN_COMPLETE"), count)); return count > 0
 end
-function VG:ScanCurrentZone() local mapID = self:GetPlayerMapID(); if not mapID then self:Warn(self:T("SCAN_FAILED")); return false end; return self:ScanZoneRoot(mapID) end
+function VG:ScanCurrentZone() local context, reason = self:GetCurrentMapContext(); if not context or not context.mapID then self:Warn((self:T("SCAN_FAILED")) .. ": " .. tostring(reason)); return false end; return self:ScanZoneRoot(context.mapID) end
 function VG:ShowZoneStatus()
     local s = self:InitializeZoneScanner(); local maps, roots = 0, 0; for _ in pairs(s.maps) do maps = maps + 1 end; for _ in pairs(s.roots) do roots = roots + 1 end
     self:Info(string.format("%s | %s: %d | %s: %d", self:T("ZONE_SCANNER"), self:T("MAPS_DISCOVERED"), maps, self:T("ROOTS_SCANNED"), roots))
@@ -43,4 +43,10 @@ function VG:FindZones(query)
 end
 function VG:ValidateZones()
     local errors = 0; for id, z in pairs(self:InitializeZoneScanner().maps) do if tonumber(id) ~= tonumber(z.mapID) or type(z.name) ~= "string" or z.parentMapID == z.mapID then errors = errors + 1 end end; self:Info(string.format("%s: %d errors", self:T("ZONE_DATABASE"), errors))
+end
+function VG:ShowMapAPIDiagnostics()
+    local map = C_Map; self:Info("Map API Diagnostics | C_Map: " .. (type(map) == "table" and "available" or "unavailable"))
+    for _, name in ipairs({ "GetBestMapForUnit", "GetPlayerMapPosition", "GetMapInfo", "GetMapChildrenInfo" }) do self:Info(name .. ": " .. (map and type(map[name]) or "unavailable")) end
+    if map and type(map.GetBestMapForUnit) == "function" then local ok, value = pcall(map.GetBestMapForUnit, "player"); self:Info("GetBestMapForUnit(player): " .. (ok and tostring(value) or "error")) end
+    local context, reason = self:GetCurrentMapContext(); self:Info("Current map context: " .. (context and tostring(context.mapID) or "nil") .. (reason and (" | " .. reason) or ""))
 end

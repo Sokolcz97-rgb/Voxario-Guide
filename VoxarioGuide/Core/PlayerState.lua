@@ -28,7 +28,9 @@ function VG:GetPlayerMapID()
     -- TODO VERIFY FOREVER API: C_Map.GetBestMapForUnit is expected on Mainline-style clients.
     if C_Map and C_Map.GetBestMapForUnit then
         local ok, mapID = pcall(C_Map.GetBestMapForUnit, "player")
-        if ok then return mapID end
+        if ok and mapID then return mapID end
     end
-    return nil
+    if not C_Map then return nil, "C_Map is unavailable" end
+    if not C_Map.GetBestMapForUnit then return nil, "C_Map.GetBestMapForUnit is unavailable" end
+    return nil, "C_Map.GetBestMapForUnit returned nil for player"
 end
