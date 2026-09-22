@@ -2,7 +2,7 @@
 
 **Voxario Guide** is a free, open-source, step-by-step leveling and quest-guide addon for **World of Warcraft: Forever**. It advises the player and reacts only to legitimate game state. It never moves a character, selects targets, casts abilities, or performs protected actions.
 
-Status: **0.4.0-alpha — early development / Forever Beta validation required.**
+Status: **0.5.0-alpha — early development / Forever Beta validation required.**
 
 ## Features
 
@@ -16,6 +16,7 @@ Status: **0.4.0-alpha — early development / Forever Beta validation required.*
 - Dynamic Guide Engine with nested conditions, sections, optional steps, pause/resume, recommendations, and manual guide chaining.
 - Development-category guides are selectable on any character while real incompatible guides remain disabled.
 - Centralized waypoint navigation with normalized coordinates and safe coordinate fallback.
+- First Horde-first real-content framework: `Durotar 1-10` is registered as an alpha route with no fabricated gameplay data.
 
 ## Installation
 
@@ -43,6 +44,8 @@ The target TOC interface is `16001`. Update [VoxarioGuide.toc](VoxarioGuide/Voxa
 | `/vg nav clear` | Clear the temporary active waypoint. |
 | `/vg navhere` | Create a temporary waypoint at the current verified map position. |
 | `/vg location` | Print current map ID and coordinates when available. |
+| `/vg step <number>` | Development-safe jump to a valid step in the active guide. |
+| `/vg validate` | Validate registered guide data structure and pending-verification counts. |
 | `/vg record start` | Start recording a temporary development route. |
 | `/vg record stop` | Stop recording while preserving its steps. |
 | `/vg record status` | Print recorder state and step count. |
@@ -74,6 +77,10 @@ Guides with `category = "development"` remain selectable regardless of guide met
 Any step may contain `mapID`, normalized `x`/`y` coordinates, and optional `targetName`. When active, it creates the shared waypoint used by the guide window and navigation element. Coordinates are stored internally as `0.0–1.0`; explicit percentage values such as `52.4, 37.8` are normalized to `0.524, 0.378`. Invalid values clear the waypoint safely.
 
 Forever distance and player-facing APIs have not yet been verified for reliable yard/direction calculations. Therefore 0.4.0-alpha displays target labels and coordinates only; it does not fabricate a direction arrow, yard distance, or GO_TO arrival completion. The settings defaults are persisted for future verified implementations, with GO_TO auto-complete disabled.
+
+## Content status
+
+`Durotar 1-10` is Horde-only, `category = "leveling"`, and `status = "alpha"`. It is a real route framework, not a claimed complete 1–10 guide: its current two notes are explicitly marked `verification = "pending"` until Forever Beta quest, NPC, coordinate, and prerequisite data are recorded and tested. No Alliance production route data is included. Use `/vg validate` to find structural errors, suspicious duplicate quest steps, and pending data markers.
 
 Use `/vg mark Enter the cave` to create a waypoint while building a route. Use `/vg note Sell junk and repair` for a note. `/vg record export` opens valid Lua guide data in a scrollable copyable box. It intentionally omits unavailable titles and positions rather than inventing values.
 

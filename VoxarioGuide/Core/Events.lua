@@ -45,6 +45,10 @@ SlashCmdList.VOXARIOGUIDE = function(message)
     local command, argument = (message or ""):match("^%s*(%S*)%s*(.-)%s*$")
     command, argument = string.lower(command or ""), argument or ""
     if command == "help" then VG:ShowHelp()
+    elseif command == "validate" then VG:ValidateRegisteredGuides()
+    elseif command == "step" then
+        local index = tonumber(argument); local guide = VG:GetCurrentGuide(); local total = VG:GetTotalSteps(guide)
+        if not index or index < 1 or index > total or not VG:SetCurrentStep(index, guide) then VG:Warn("Usage: /vg step <valid step number>") else VG:RefreshCurrentStepUI() end
     elseif command == "nav" then if string.lower(argument) == "clear" then VG:ClearWaypoint(); VG:Info(VG:T("NO_WAYPOINT")) else VG:ShowNavigationStatus() end
     elseif command == "navhere" then VG:SetNavigationHere()
     elseif command == "location" then VG:ShowCurrentLocation()
@@ -71,6 +75,6 @@ SlashCmdList.VOXARIOGUIDE = function(message)
 end
 
 function VG:ShowHelp()
-    self:Info("/vg, /vg help, /vg guides, /vg status, /vg reset, /vg pause, /vg resume, /vg nav [clear], /vg navhere, /vg location, /vg debug, /vg devmode, /vg version")
+    self:Info("/vg, /vg help, /vg guides, /vg status, /vg reset, /vg step <n>, /vg validate, /vg pause, /vg resume, /vg nav [clear], /vg navhere, /vg location, /vg debug, /vg devmode, /vg version")
     self:Info("Recorder: /vg record start|stop|status|clear|export, /vg mark [note], /vg note <text>")
 end
