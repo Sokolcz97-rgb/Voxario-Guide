@@ -8,7 +8,9 @@ function VG:CreateGuideSelector()
     frame.items = {}
     function frame:Refresh()
         for _, button in ipairs(self.items) do button:Hide() end
-        local guides = VG:GetCompatibleGuides(VG.Player)
+        local guides = {}
+        for _, guide in pairs(VG.Guides) do table.insert(guides, guide) end
+        table.sort(guides, function(a, b) return (a.priority or 0) > (b.priority or 0) end)
         if #guides == 0 then
             frame.title:SetText(VG:T("NO_GUIDE_SELECTED"))
             return
@@ -18,7 +20,10 @@ function VG:CreateGuideSelector()
             local button = self.items[index] or CreateFrame("Button", nil, self, "UIPanelButtonTemplate")
             self.items[index] = button; button:SetSize(310, 36); button:SetPoint("TOP", 0, -48 - (index - 1) * 42)
             local range = string.format("%d–%d", guide.minLevel or 1, guide.maxLevel or 60)
-            button:SetText(guide.name .. "  (" .. range .. ")"); button:SetScript("OnClick", function() if VG:SelectGuide(guide.id) then self:Hide() end end); button:Show()
+            local availability = VG:GetGuideAvailability(guide, VG.Player)
+            local label = availability == "recommended" and VG:T("RECOMMENDED") or (availability == "compatible" and VG:T("COMPATIBLE") or VG:T("UNAVAILABLE"))
+            button:SetText("[" .. label .. "] " .. guide.name .. " (" .. range .. ")")
+            button:SetEnabled(availability ~= "unavailable"); button:SetScript("OnClick", function() if VG:SelectGuide(guide.id) then self:Hide() end end); button:Show()
         end
     end
     self.UI.GuideSelector = frame

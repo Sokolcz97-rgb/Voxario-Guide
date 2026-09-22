@@ -75,6 +75,18 @@ function VG:IsGuideComplete(guide)
     return self.db and guide and self.db.guideComplete and self.db.guideComplete[guide.id] == true or false
 end
 
+function VG:GetNextGuide(guide)
+    guide = guide or self:GetCurrentGuide()
+    return guide and guide.nextGuide and self:GetGuide(guide.nextGuide) or nil
+end
+
+function VG:IsGuidePaused() return self.db and self.db.guidePaused == true end
+function VG:SetGuidePaused(paused)
+    if not self.db then return end
+    self.db.guidePaused = paused == true
+    self:RefreshCurrentStepUI()
+end
+
 function VG:RefreshCurrentStepUI()
     local step, guide = self:GetCurrentStep()
     if self:IsGuideComplete(guide) then step = nil end
@@ -93,9 +105,14 @@ function VG:EvaluateCurrentStep()
 
     local currentStep = self:NormalizeCurrentStep(guide)
     if self:IsGuideComplete(guide) then self:RefreshCurrentStepUI(); return end
+    if self:IsGuidePaused() then self:RefreshCurrentStepUI(); return end
 
     local step = guide.steps[currentStep]
+    local resolved, limit = 0, math.min(count, 200)
     while step and (not self:AreConditionsMet(step, guide) or self:IsStepComplete(step)) do
+        resolved = resolved + 1
+        if resolved > limit then self:Warn("Step resolver stopped at safety limit."); break end
+        if self.db.settings.debug then self:Debug("Auto-skipped step " .. currentStep) end
         self:MarkStepCompleted(guide.id, currentStep)
         if currentStep >= count then
             self.db.guideComplete[guide.id] = true

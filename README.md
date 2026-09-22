@@ -2,7 +2,7 @@
 
 **Voxario Guide** is a free, open-source, step-by-step leveling and quest-guide addon for **World of Warcraft: Forever**. It advises the player and reacts only to legitimate game state. It never moves a character, selects targets, casts abilities, or performs protected actions.
 
-Status: **0.2.1-alpha — early development / Forever Beta validation required.**
+Status: **0.3.0-alpha — early development / Forever Beta validation required.**
 
 ## Features
 
@@ -13,6 +13,7 @@ Status: **0.2.1-alpha — early development / Forever Beta validation required.*
 - Development-only Horde and Alliance guides with no invented Forever quest IDs or map coordinates.
 - Developer-only Guide Recorder that captures legitimate quest events, manual waypoints, and notes in a reload-safe temporary route.
 - Location-independent Development Test Guide for testing UI, controls, reload recovery, and completion state.
+- Dynamic Guide Engine with nested conditions, sections, optional steps, pause/resume, recommendations, and manual guide chaining.
 
 ## Installation
 
@@ -33,6 +34,8 @@ The target TOC interface is `16001`. Update [VoxarioGuide.toc](VoxarioGuide/Voxa
 | `/vg status` | Print current player/guide/quest/waypoint state. |
 | `/vg version` | Print addon version. |
 | `/vg help` | Print the available commands. |
+| `/vg pause` | Pause automatic guide resolution. |
+| `/vg resume` | Resume automatic guide resolution. |
 | `/vg record start` | Start recording a temporary development route. |
 | `/vg record stop` | Stop recording while preserving its steps. |
 | `/vg record status` | Print recorder state and step count. |
@@ -50,6 +53,12 @@ Recorder data survives reloads, but recording itself is switched **off** on logi
 ## Development Test Guide
 
 `Development Test Guide` has five `NOTE` steps and is available to every faction from any location. It contains no quest IDs, map IDs, or live leveling content. Use it to verify Previous/Next/Skip boundaries, reload recovery, frame settings, and the Guide Complete state.
+
+`Dynamic Test Part 1` and `Dynamic Test Part 2` validate nested conditions, automatic skipping, optional steps, sections, pause/resume, and explicit next-guide chaining. They are location-independent and contain no live quest data.
+
+## Dynamic guide metadata
+
+Guides may declare `category`, `priority`, `previousGuide`, `nextGuide`, and `sections`. Steps may declare `section`, `optional = true`, and `conditions`. Conditions combine ordinary fields (`minLevel`, `maxLevel`, `faction`, `race`, `class`, quest state, and `previousStep`) with readable nested `allOf`, `anyOf`, and `not` groups. Invalid or already-completed steps resolve forward through one bounded resolver path; automatic skips never enter manual skip history.
 
 Use `/vg mark Enter the cave` to create a waypoint while building a route. Use `/vg note Sell junk and repair` for a note. `/vg record export` opens valid Lua guide data in a scrollable copyable box. It intentionally omits unavailable titles and positions rather than inventing values.
 

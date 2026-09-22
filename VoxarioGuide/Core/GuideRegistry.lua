@@ -24,3 +24,14 @@ function VG:GetCompatibleGuides(player)
     table.sort(results, function(a, b) return a.name < b.name end)
     return results
 end
+
+function VG:GetGuideAvailability(guide, player)
+    if type(guide) ~= "table" then return "unavailable" end
+    player = type(player) == "table" and player or {}
+    local level = tonumber(player.level) or 1
+    if (guide.faction and guide.faction ~= player.faction) or (guide.minLevel and level < guide.minLevel) or (guide.maxLevel and level > guide.maxLevel) then return "unavailable" end
+    if guide.race and not self:ValueMatches(guide.race, player.race) then return "unavailable" end
+    if guide.class and not self:ValueMatches(guide.class, player.class) then return "unavailable" end
+    if guide.previousGuide and not (self.db and self.db.guideComplete and self.db.guideComplete[guide.previousGuide]) then return "compatible" end
+    return "recommended"
+end

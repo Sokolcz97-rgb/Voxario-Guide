@@ -1,7 +1,7 @@
 local addonName, VG = ...
 
 VG.Name = addonName
-VG.Version = "0.2.1-alpha"
+VG.Version = "0.3.0-alpha"
 VG.Interface = 16001
 VG.Modules = VG.Modules or {}
 VG.L = VG.L or {}
@@ -29,6 +29,7 @@ function VG:InitializeDatabase()
     if type(db.settings.locked) ~= "boolean" then db.settings.locked = false end
     if type(db.settings.debug) ~= "boolean" then db.settings.debug = false end
     if type(db.settings.minimized) ~= "boolean" then db.settings.minimized = false end
+    if type(db.guidePaused) ~= "boolean" then db.guidePaused = false end
     if type(db.completedSteps) ~= "table" then db.completedSteps = {} end
     if type(db.guideComplete) ~= "table" then db.guideComplete = {} end
     if type(db.manualSkipHistory) ~= "table" then db.manualSkipHistory = {} end

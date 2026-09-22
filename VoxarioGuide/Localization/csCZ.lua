@@ -10,4 +10,6 @@ VG.L.csCZ = {
     RECOMMENDED = "Doporučeno", DEVELOPMENT = "Vývojová trasa — neobsahuje ověřená quest ID.",
     NO_GUIDE_SELECTED = "Neni vybran guide", CHOOSE_GUIDE = "Vybrat guide", RESTART_GUIDE = "Restartovat guide",
     LOCK = "Zamknout", UNLOCK = "Odemknout", DEVELOPMENT_TEST_GUIDE = "Vyvojovy test guide",
+    PAUSED = "Pozastaveno", RESUMED = "Pokracuje", OPTIONAL = "Volitelne", SECTION = "Sekce", START_NEXT_GUIDE = "Spustit dalsi guide",
+    NEXT_GUIDE = "Dalsi doporuceny guide", COMPATIBLE = "Kompatibilni", UNAVAILABLE = "Nedostupne", NO_COMPATIBLE_GUIDES = "Zadne kompatibilni guides.",
 }

@@ -10,4 +10,6 @@ VG.L.enUS = {
     RECOMMENDED = "Recommended", DEVELOPMENT = "Development route — no verified quest IDs included.",
     NO_GUIDE_SELECTED = "No guide selected", CHOOSE_GUIDE = "Choose Guide", RESTART_GUIDE = "Restart Guide",
     LOCK = "Lock", UNLOCK = "Unlock", DEVELOPMENT_TEST_GUIDE = "Development Test Guide",
+    PAUSED = "Paused", RESUMED = "Resumed", OPTIONAL = "Optional", SECTION = "Section", START_NEXT_GUIDE = "Start Next Guide",
+    NEXT_GUIDE = "Next recommended guide", COMPATIBLE = "Compatible", UNAVAILABLE = "Unavailable", NO_COMPATIBLE_GUIDES = "No compatible guides.",
 }
