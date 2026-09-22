@@ -48,5 +48,10 @@ function VG:ShowMapAPIDiagnostics()
     local map = C_Map; self:Info("Map API Diagnostics | C_Map: " .. (type(map) == "table" and "available" or "unavailable"))
     for _, name in ipairs({ "GetBestMapForUnit", "GetPlayerMapPosition", "GetMapInfo", "GetMapChildrenInfo" }) do self:Info(name .. ": " .. (map and type(map[name]) or "unavailable")) end
     if map and type(map.GetBestMapForUnit) == "function" then local ok, value = pcall(map.GetBestMapForUnit, "player"); self:Info("GetBestMapForUnit(player): " .. (ok and tostring(value) or "error")) end
+    local mapID = self:GetPlayerMapID()
+    if mapID then
+        local x, y, reason, shape = self:GetPlayerCoordinates(mapID)
+        self:Info("GetPlayerMapPosition(" .. mapID .. ", player): " .. (x and ("success | " .. shape .. " | " .. self:FormatCoordinates(x, y)) or ("unavailable | " .. tostring(reason)))
+    end
     local context, reason = self:GetCurrentMapContext(); self:Info("Current map context: " .. (context and tostring(context.mapID) or "nil") .. (reason and (" | " .. reason) or ""))
 end

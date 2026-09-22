@@ -34,17 +34,37 @@ function VG:GetNavigationLocation()
     if not context then return nil end
     return context.mapID, context.x, context.y
 end
+
+-- Forever follows the C_Map signature (mapID, unit).  Keep this in one place so
+-- navigation, location reporting, and recording cannot disagree about it.
+function VG:GetPlayerCoordinates(mapID)
+    mapID = tonumber(mapID)
+    if not mapID then return nil, nil, "Player coordinates require a valid mapID" end
+    if not C_Map or type(C_Map.GetPlayerMapPosition) ~= "function" then
+        return nil, nil, "C_Map.GetPlayerMapPosition is unavailable"
+    end
+
+    local ok, position = pcall(C_Map.GetPlayerMapPosition, mapID, "player")
+    if not ok then
+        return nil, nil, "C_Map.GetPlayerMapPosition raised an error for mapID " .. mapID
+    end
+    if not position then
+        return nil, nil, "C_Map.GetPlayerMapPosition returned nil for mapID " .. mapID
+    end
+    if type(position) ~= "table" or type(position.x) ~= "number" or type(position.y) ~= "number" then
+        return nil, nil, "C_Map.GetPlayerMapPosition returned a value without numeric x/y for mapID " .. mapID
+    end
+    return position.x, position.y, nil, "vector x/y"
+end
+
 function VG:GetCurrentMapContext()
     local mapID, reason = self:GetPlayerMapID()
     if not mapID then return nil, reason end
     local context = { mapID = mapID }
     if C_Map and C_Map.GetMapInfo then local ok, info = pcall(C_Map.GetMapInfo, mapID); if ok and type(info) == "table" then context.mapInfo = info end end
-    if not C_Map or not C_Map.GetPlayerMapPosition then return context, "C_Map.GetPlayerMapPosition is unavailable" end
-    local ok, position = pcall(C_Map.GetPlayerMapPosition, "player", mapID)
-    if not ok then return context, "C_Map.GetPlayerMapPosition errored" end
-    if not position then return context, "C_Map.GetPlayerMapPosition returned nil for mapID " .. mapID end
-    if type(position.x) ~= "number" or type(position.y) ~= "number" then return context, "player position has no numeric x/y" end
-    context.x, context.y = position.x, position.y
+    local x, y, coordinateReason = self:GetPlayerCoordinates(mapID)
+    if not x then return context, coordinateReason end
+    context.x, context.y = x, y
     return context
 end
 
@@ -58,10 +78,14 @@ function VG:ShowCurrentLocation()
     if not context then self:Warn(reason or self:T("LOCATION_UNAVAILABLE")); return end
     local zone, info = self:GetZone(context.mapID), context.mapInfo
     self:Info(string.format("%s: MapID %s | %s | X/Y %s | type %s | parent %s | %s", self:T("CURRENT_LOCATION"), context.mapID, (zone and zone.name) or (info and info.name) or "Unavailable", context.x and self:FormatCoordinates(context.x, context.y) or "Unavailable", (zone and zone.mapType) or (info and info.mapType) or "Unavailable", (zone and zone.parentMapID) or (info and info.parentMapID) or "Unavailable", zone and zone.source or "unscanned"))
-    if reason then self:Warn(reason) end
+    if reason then self:Debug(reason) end
 end
 function VG:SetNavigationHere()
     local context, reason = self:GetCurrentMapContext()
-    if not context or not context.x then self:Warn(reason or self:T("LOCATION_UNAVAILABLE")); return false end
+    if not context or not context.x then
+        self:Warn(context and ("Player coordinates unavailable for map " .. context.mapID .. ".") or self:T("LOCATION_UNAVAILABLE"))
+        if reason then self:Debug(reason) end
+        return false
+    end
     return self:SetWaypoint(context.mapID, context.x, context.y, self:T("CURRENT_LOCATION"))
 end

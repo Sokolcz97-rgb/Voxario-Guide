@@ -20,11 +20,10 @@ end
 
 function VG:GetRecorderLocation()
     local mapID = self:GetPlayerMapID()
-    if not mapID or not C_Map or not C_Map.GetPlayerMapPosition then return nil end
-    -- TODO VERIFY FOREVER API: C_Map.GetPlayerMapPosition is guarded for Beta compatibility.
-    local ok, position = pcall(C_Map.GetPlayerMapPosition, "player", mapID)
-    if not ok or not position or type(position.x) ~= "number" or type(position.y) ~= "number" then return nil end
-    return mapID, position.x, position.y
+    if not mapID then return nil end
+    local x, y = self:GetPlayerCoordinates(mapID)
+    if not x then return nil end
+    return mapID, x, y
 end
 
 function VG:GetRecorderPlayerContext()
