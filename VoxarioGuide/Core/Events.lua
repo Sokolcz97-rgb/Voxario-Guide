@@ -15,10 +15,12 @@ end
 
 function VG:OnLogin()
     self:InitializeDatabase()
+    self:InitializeRecorder()
     self:UpdatePlayerState()
     self:RefreshQuestState()
     self:CreateGuideFrame()
     self:CreateNavigationArrow()
+    self:CreateRecorderIndicator()
     if self.db.selectedGuide and self:GetGuide(self.db.selectedGuide) then
         if not self:SelectGuide(self.db.selectedGuide) then self:ShowGuideSelector() end
     else
@@ -29,16 +31,30 @@ end
 
 eventFrame:RegisterEvent("PLAYER_LOGIN")
 for eventName in pairs(refreshEvents) do eventFrame:RegisterEvent(eventName) end
-eventFrame:SetScript("OnEvent", function(_, event)
+eventFrame:SetScript("OnEvent", function(_, event, ...)
     if event == "PLAYER_LOGIN" then VG:SafeCall("Initialization", VG.OnLogin, VG)
-    elseif VG.db then VG:SafeCall("State refresh after " .. event, VG.RefreshFromGameState, VG) end
+    elseif VG.db then
+        VG:SafeCall("Recorder event " .. event, VG.OnRecorderEvent, VG, event, ...)
+        VG:SafeCall("State refresh after " .. event, VG.RefreshFromGameState, VG)
+    end
 end)
 
 SLASH_VOXARIOGUIDE1 = "/vg"
 SLASH_VOXARIOGUIDE2 = "/voxarioguide"
 SlashCmdList.VOXARIOGUIDE = function(message)
-    local command = string.lower((message or ""):match("^%s*(%S*)") or "")
-    if command == "guides" then VG:ShowGuideSelector()
+    local command, argument = (message or ""):match("^%s*(%S*)%s*(.-)%s*$")
+    command, argument = string.lower(command or ""), argument or ""
+    if command == "record" then
+        local action = string.lower(argument)
+        if action == "start" then VG:StartRecording()
+        elseif action == "stop" then VG:StopRecording()
+        elseif action == "status" then VG:ShowRecordingStatus()
+        elseif action == "clear" then VG:ClearRecording()
+        elseif action == "export" then VG:ShowRecorderExport()
+        else VG:Info("Usage: /vg record start|stop|status|clear|export") end
+    elseif command == "mark" then VG:RecordWaypoint(argument)
+    elseif command == "note" then VG:RecordNote(argument)
+    elseif command == "guides" then VG:ShowGuideSelector()
     elseif command == "reset" then VG:ResetCurrentGuide(); VG:Info(VG:T("RESET_GUIDE"))
     elseif command == "debug" then VG.db.settings.debug = not VG.db.settings.debug; VG:Info("Debug " .. (VG.db.settings.debug and "enabled" or "disabled"))
     elseif command == "status" then VG:ShowDebugStatus()

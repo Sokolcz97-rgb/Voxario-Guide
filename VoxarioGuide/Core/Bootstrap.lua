@@ -1,7 +1,7 @@
 local addonName, VG = ...
 
 VG.Name = addonName
-VG.Version = "0.1.0-alpha"
+VG.Version = "0.2.0-alpha"
 VG.Interface = 16001
 VG.Modules = VG.Modules or {}
 VG.L = VG.L or {}
