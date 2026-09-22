@@ -9,10 +9,16 @@ function VG:CreateGuideSelector()
     function frame:Refresh()
         for _, button in ipairs(self.items) do button:Hide() end
         local guides = VG:GetCompatibleGuides(VG.Player)
+        if #guides == 0 then
+            frame.title:SetText(VG:T("NO_GUIDE_SELECTED"))
+            return
+        end
+        frame.title:SetText(VG:T("SELECT_GUIDE"))
         for index, guide in ipairs(guides) do
             local button = self.items[index] or CreateFrame("Button", nil, self, "UIPanelButtonTemplate")
             self.items[index] = button; button:SetSize(310, 36); button:SetPoint("TOP", 0, -48 - (index - 1) * 42)
-            button:SetText(string.format("%s  (%d–%d)", guide.name, guide.minLevel or 1, guide.maxLevel or 60)); button:SetScript("OnClick", function() VG:SelectGuide(guide.id); self:Hide() end); button:Show()
+            local range = string.format("%d–%d", guide.minLevel or 1, guide.maxLevel or 60)
+            button:SetText(guide.name .. "  (" .. range .. ")"); button:SetScript("OnClick", function() if VG:SelectGuide(guide.id) then self:Hide() end end); button:Show()
         end
     end
     self.UI.GuideSelector = frame

@@ -47,6 +47,23 @@ function VG:GetCurrentGuide()
     return self.db and self:GetGuide(self.db.selectedGuide) or nil
 end
 
+function VG:GetCurrentStepIndex(guide)
+    guide = guide or self:GetCurrentGuide()
+    return self:NormalizeCurrentStep(guide)
+end
+
+function VG:GetTotalSteps(guide)
+    return self:GetGuideStepCount(guide or self:GetCurrentGuide())
+end
+
+function VG:SetCurrentStep(index, guide)
+    guide = guide or self:GetCurrentGuide()
+    if self:GetGuideStepCount(guide) == 0 then return false end
+    self.db.currentStep = index
+    self:NormalizeCurrentStep(guide)
+    return true
+end
+
 function VG:GetCurrentStep()
     local guide = self:GetCurrentGuide()
     if self:GetGuideStepCount(guide) == 0 then return nil, guide end

@@ -2,7 +2,7 @@
 
 **Voxario Guide** is a free, open-source, step-by-step leveling and quest-guide addon for **World of Warcraft: Forever**. It advises the player and reacts only to legitimate game state. It never moves a character, selects targets, casts abilities, or performs protected actions.
 
-Status: **0.2.0-alpha — early development / Forever Beta validation required.**
+Status: **0.2.1-alpha — early development / Forever Beta validation required.**
 
 ## Features
 
@@ -12,6 +12,7 @@ Status: **0.2.0-alpha — early development / Forever Beta validation required.*
 - Compact draggable UI, guide selector, navigation fallback, debug status, and English/Czech UI strings.
 - Development-only Horde and Alliance guides with no invented Forever quest IDs or map coordinates.
 - Developer-only Guide Recorder that captures legitimate quest events, manual waypoints, and notes in a reload-safe temporary route.
+- Location-independent Development Test Guide for testing UI, controls, reload recovery, and completion state.
 
 ## Installation
 
@@ -31,6 +32,7 @@ The target TOC interface is `16001`. Update [VoxarioGuide.toc](VoxarioGuide/Voxa
 | `/vg debug` | Toggle debug logging. |
 | `/vg status` | Print current player/guide/quest/waypoint state. |
 | `/vg version` | Print addon version. |
+| `/vg help` | Print the available commands. |
 | `/vg record start` | Start recording a temporary development route. |
 | `/vg record stop` | Stop recording while preserving its steps. |
 | `/vg record status` | Print recorder state and step count. |
@@ -42,6 +44,12 @@ The target TOC interface is `16001`. Update [VoxarioGuide.toc](VoxarioGuide/Voxa
 ## Guide Recorder
 
 The development-only recorder observes normal player activity and never performs a game action. While `/vg record start` is active, it records quest acceptance, completions found during the guarded `QUEST_LOG_UPDATE` event, and quest turn-ins. Every recorded event stores available map coordinates, level, faction, race, class, timestamp, and order. A small `REC <count>` indicator is visible only while recording.
+
+Recorder data survives reloads, but recording itself is switched **off** on login/reload. Starting it always requires an explicit `/vg record start`; normal guide use never records route data.
+
+## Development Test Guide
+
+`Development Test Guide` has five `NOTE` steps and is available to every faction from any location. It contains no quest IDs, map IDs, or live leveling content. Use it to verify Previous/Next/Skip boundaries, reload recovery, frame settings, and the Guide Complete state.
 
 Use `/vg mark Enter the cave` to create a waypoint while building a route. Use `/vg note Sell junk and repair` for a note. `/vg record export` opens valid Lua guide data in a scrollable copyable box. It intentionally omits unavailable titles and positions rather than inventing values.
 

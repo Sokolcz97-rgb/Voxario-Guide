@@ -8,4 +8,6 @@ VG.L.csCZ = {
     YES = "Ano", NO = "Ne", LOCKED = "Zamčeno", UNLOCKED = "Odemčeno",
     DEBUG = "Debug", MINIMIZE = "Minimalizovat", RESTORE = "Obnovit", RESET_CONFIRM = "Resetovat aktuální guide?",
     RECOMMENDED = "Doporučeno", DEVELOPMENT = "Vývojová trasa — neobsahuje ověřená quest ID.",
+    NO_GUIDE_SELECTED = "Neni vybran guide", CHOOSE_GUIDE = "Vybrat guide", RESTART_GUIDE = "Restartovat guide",
+    LOCK = "Zamknout", UNLOCK = "Odemknout", DEVELOPMENT_TEST_GUIDE = "Vyvojovy test guide",
 }

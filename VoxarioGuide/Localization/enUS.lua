@@ -8,4 +8,6 @@ VG.L.enUS = {
     YES = "Yes", NO = "No", LOCKED = "Locked", UNLOCKED = "Unlocked",
     DEBUG = "Debug", MINIMIZE = "Minimize", RESTORE = "Restore", RESET_CONFIRM = "Reset the current guide?",
     RECOMMENDED = "Recommended", DEVELOPMENT = "Development route — no verified quest IDs included.",
+    NO_GUIDE_SELECTED = "No guide selected", CHOOSE_GUIDE = "Choose Guide", RESTART_GUIDE = "Restart Guide",
+    LOCK = "Lock", UNLOCK = "Unlock", DEVELOPMENT_TEST_GUIDE = "Development Test Guide",
 }

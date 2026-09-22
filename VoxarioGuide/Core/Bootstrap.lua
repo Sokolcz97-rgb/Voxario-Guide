@@ -1,7 +1,7 @@
 local addonName, VG = ...
 
 VG.Name = addonName
-VG.Version = "0.2.0-alpha"
+VG.Version = "0.2.1-alpha"
 VG.Interface = 16001
 VG.Modules = VG.Modules or {}
 VG.L = VG.L or {}
@@ -24,9 +24,11 @@ function VG:InitializeDatabase()
     VoxarioGuideDB = VoxarioGuideDB or {}
     local db = VoxarioGuideDB
     if type(db.settings) ~= "table" then db.settings = {} end
-    if db.settings.scale == nil then db.settings.scale = 1 end
-    if db.settings.locked == nil then db.settings.locked = false end
-    if db.settings.debug == nil then db.settings.debug = false end
+    db.settings.scale = tonumber(db.settings.scale) or 1
+    db.settings.scale = math.max(0.7, math.min(1.5, db.settings.scale))
+    if type(db.settings.locked) ~= "boolean" then db.settings.locked = false end
+    if type(db.settings.debug) ~= "boolean" then db.settings.debug = false end
+    if type(db.settings.minimized) ~= "boolean" then db.settings.minimized = false end
     if type(db.completedSteps) ~= "table" then db.completedSteps = {} end
     if type(db.guideComplete) ~= "table" then db.guideComplete = {} end
     if type(db.manualSkipHistory) ~= "table" then db.manualSkipHistory = {} end
@@ -34,6 +36,19 @@ function VG:InitializeDatabase()
     if currentStep ~= currentStep or currentStep == math.huge or currentStep == -math.huge then currentStep = 1 end
     currentStep = math.floor(currentStep)
     db.currentStep = math.max(1, currentStep)
+    if type(db.position) == "table" then
+        local point = db.position.point or db.position[1]
+        local relativePoint = db.position.relativePoint or db.position[3] or point
+        local x, y = tonumber(db.position.x or db.position[4]), tonumber(db.position.y or db.position[5])
+        local validPoints = { TOP = true, TOPLEFT = true, TOPRIGHT = true, LEFT = true, CENTER = true, RIGHT = true, BOTTOM = true, BOTTOMLEFT = true, BOTTOMRIGHT = true }
+        if validPoints[point] and validPoints[relativePoint] and x and y then
+            db.position = { point = point, relativePoint = relativePoint, x = x, y = y }
+        else
+            db.position = nil
+        end
+    else
+        db.position = nil
+    end
     self.db = db
 end
 

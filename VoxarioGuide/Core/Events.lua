@@ -15,7 +15,7 @@ end
 
 function VG:OnLogin()
     self:InitializeDatabase()
-    self:InitializeRecorder()
+    self:InitializeRecorder(true)
     self:UpdatePlayerState()
     self:RefreshQuestState()
     self:CreateGuideFrame()
@@ -44,7 +44,8 @@ SLASH_VOXARIOGUIDE2 = "/voxarioguide"
 SlashCmdList.VOXARIOGUIDE = function(message)
     local command, argument = (message or ""):match("^%s*(%S*)%s*(.-)%s*$")
     command, argument = string.lower(command or ""), argument or ""
-    if command == "record" then
+    if command == "help" then VG:ShowHelp()
+    elseif command == "record" then
         local action = string.lower(argument)
         if action == "start" then VG:StartRecording()
         elseif action == "stop" then VG:StopRecording()
@@ -59,5 +60,11 @@ SlashCmdList.VOXARIOGUIDE = function(message)
     elseif command == "debug" then VG.db.settings.debug = not VG.db.settings.debug; VG:Info("Debug " .. (VG.db.settings.debug and "enabled" or "disabled"))
     elseif command == "status" then VG:ShowDebugStatus()
     elseif command == "version" then VG:Info(VG.Version)
-    else local frame = VG:CreateGuideFrame(); if frame:IsShown() then frame:Hide() else frame:Show(); frame:Refresh() end end
+    elseif command == "" then local frame = VG:CreateGuideFrame(); if frame:IsShown() then frame:Hide() else frame:Show(); frame:Refresh() end
+    else VG:Warn("Unknown command. Use /vg help.") end
+end
+
+function VG:ShowHelp()
+    self:Info("/vg, /vg help, /vg guides, /vg status, /vg reset, /vg debug, /vg version")
+    self:Info("Recorder: /vg record start|stop|status|clear|export, /vg mark [note], /vg note <text>")
 end

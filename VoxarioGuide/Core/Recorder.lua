@@ -5,13 +5,15 @@ local function ensureTable(parent, key)
     return parent[key]
 end
 
-function VG:InitializeRecorder()
+function VG:InitializeRecorder(stopOnLogin)
     local recorder = ensureTable(self.db, "recorder")
     if type(recorder.active) ~= "boolean" then recorder.active = false end
+    if stopOnLogin then recorder.active = false end
     ensureTable(recorder, "steps")
     ensureTable(recorder, "recordedQuestEvents")
     ensureTable(recorder, "questTitles")
     recorder.sequence = tonumber(recorder.sequence) or #recorder.steps
+    if recorder.sequence ~= recorder.sequence or recorder.sequence < 0 then recorder.sequence = #recorder.steps end
     self.Recorder = recorder
     return recorder
 end
