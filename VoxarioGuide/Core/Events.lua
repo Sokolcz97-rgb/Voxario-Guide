@@ -19,7 +19,11 @@ function VG:OnLogin()
     self:RefreshQuestState()
     self:CreateGuideFrame()
     self:CreateNavigationArrow()
-    if self.db.selectedGuide and self:GetGuide(self.db.selectedGuide) then self:EvaluateCurrentStep() else self:ShowGuideSelector() end
+    if self.db.selectedGuide and self:GetGuide(self.db.selectedGuide) then
+        if not self:SelectGuide(self.db.selectedGuide) then self:ShowGuideSelector() end
+    else
+        self:ShowGuideSelector()
+    end
     self:Info("Loaded " .. self.Version)
 end
 

@@ -21,11 +21,12 @@ function VG:ValueMatches(expected, actual)
 end
 
 function VG:IsStepCompleted(guideID, index)
-    return self.db.completedSteps[guideID] and self.db.completedSteps[guideID][index] or false
+    local completed = self.db.completedSteps[guideID]
+    return type(completed) == "table" and completed[index] == true or false
 end
 
 function VG:MarkStepCompleted(guideID, index)
-    self.db.completedSteps[guideID] = self.db.completedSteps[guideID] or {}
+    if type(self.db.completedSteps[guideID]) ~= "table" then self.db.completedSteps[guideID] = {} end
     self.db.completedSteps[guideID][index] = true
 end
 

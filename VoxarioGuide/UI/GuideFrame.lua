@@ -26,7 +26,7 @@ function VG:CreateGuideFrame()
     frame.waypoint = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall"); frame.waypoint:SetPoint("BOTTOMLEFT", 16, 42)
     frame.previous = MakeButton(frame, "<", 34, function() VG:PreviousStep() end); frame.previous:SetPoint("BOTTOMLEFT", 14, 12)
     frame.skip = MakeButton(frame, self:T("SKIP_STEP"), 90, function() VG:RequestSkip() end); frame.skip:SetPoint("LEFT", frame.previous, "RIGHT", 6, 0)
-    frame.next = MakeButton(frame, ">", 34, function() VG:AdvanceStep(true) end); frame.next:SetPoint("LEFT", frame.skip, "RIGHT", 6, 0)
+    frame.next = MakeButton(frame, ">", 34, function() VG:NextStep() end); frame.next:SetPoint("LEFT", frame.skip, "RIGHT", 6, 0)
     frame.settings = MakeButton(frame, "…", 30, function() VG:ToggleSettings() end); frame.settings:SetPoint("BOTTOMRIGHT", -14, 12)
     function frame:Refresh() VG.UI:RefreshMainFrame() end
     self.UI.GuideFrame = frame
@@ -36,9 +36,12 @@ end
 function VG.UI:RefreshMainFrame()
     local frame, step, guide = self.GuideFrame, VG:GetCurrentStep()
     if not frame then return end
-    if not guide then frame.subtitle:SetText(VG:T("NO_GUIDE")); frame.counter:SetText(""); frame.stepType:SetText(""); frame.instruction:SetText(""); frame.details:SetText(""); frame.waypoint:SetText(""); return end
+    local stepCount = VG:GetGuideStepCount(guide)
+    if not guide or stepCount == 0 then frame.subtitle:SetText(VG:T("NO_GUIDE")); frame.counter:SetText(""); frame.stepType:SetText(""); frame.instruction:SetText(""); frame.details:SetText(""); frame.waypoint:SetText(""); return end
     frame.subtitle:SetText(string.format("%s • %s", VG:T("LEVELING"), guide.faction or ""))
-    frame.counter:SetText(VG:T("STEP", math.min(VG.db.currentStep, #guide.steps), #guide.steps))
+    local currentStep = VG:NormalizeCurrentStep(guide)
+    frame.counter:SetText(VG:T("STEP", currentStep, stepCount))
+    if VG:IsGuideComplete(guide) then step = nil end
     if not step then frame.stepType:SetText(VG:T("GUIDE_COMPLETE")); frame.instruction:SetText(""); frame.details:SetText(""); frame.waypoint:SetText(""); return end
     frame.stepType:SetText(step.type or "NOTE")
     local text = step.text and (step.text[VG:GetLocale()] or step.text.enUS) or step.instruction or ""
@@ -50,7 +53,7 @@ end
 function VG:RequestSkip()
     local step = self:GetCurrentStep()
     if step and step.important and StaticPopup_Show then
-        StaticPopupDialogs["VOXARIO_SKIP"] = { text = self:T("IMPORTANT_SKIP"), button1 = self:T("YES"), button2 = self:T("NO"), OnAccept = function() VG:AdvanceStep(true) end, timeout = 0, whileDead = true, hideOnEscape = true }
+        StaticPopupDialogs["VOXARIO_SKIP"] = { text = self:T("IMPORTANT_SKIP"), button1 = self:T("YES"), button2 = self:T("NO"), OnAccept = function() VG:SkipStep() end, timeout = 0, whileDead = true, hideOnEscape = true }
         StaticPopup_Show("VOXARIO_SKIP")
-    else self:AdvanceStep(true) end
+    else self:SkipStep() end
 end

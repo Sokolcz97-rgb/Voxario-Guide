@@ -23,12 +23,17 @@ function VG:Error(message) print("|cffff5c5cVG Error:|r " .. tostring(message)) 
 function VG:InitializeDatabase()
     VoxarioGuideDB = VoxarioGuideDB or {}
     local db = VoxarioGuideDB
-    db.settings = db.settings or {}
+    if type(db.settings) ~= "table" then db.settings = {} end
     if db.settings.scale == nil then db.settings.scale = 1 end
     if db.settings.locked == nil then db.settings.locked = false end
     if db.settings.debug == nil then db.settings.debug = false end
-    db.completedSteps = db.completedSteps or {}
-    db.manualSkipHistory = db.manualSkipHistory or {}
+    if type(db.completedSteps) ~= "table" then db.completedSteps = {} end
+    if type(db.guideComplete) ~= "table" then db.guideComplete = {} end
+    if type(db.manualSkipHistory) ~= "table" then db.manualSkipHistory = {} end
+    local currentStep = tonumber(db.currentStep) or 1
+    if currentStep ~= currentStep or currentStep == math.huge or currentStep == -math.huge then currentStep = 1 end
+    currentStep = math.floor(currentStep)
+    db.currentStep = math.max(1, currentStep)
     self.db = db
 end
 
