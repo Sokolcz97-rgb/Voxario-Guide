@@ -51,7 +51,7 @@ function VG:ShowMapAPIDiagnostics()
     local mapID = self:GetPlayerMapID()
     if mapID then
         local x, y, reason, shape = self:GetPlayerCoordinates(mapID)
-        self:Info("GetPlayerMapPosition(" .. mapID .. ", player): " .. (x and ("success | " .. shape .. " | " .. self:FormatCoordinates(x, y)) or ("unavailable | " .. tostring(reason)))
+        self:Info("GetPlayerMapPosition(" .. mapID .. ", player): " .. (x and ("success | " .. shape .. " | " .. self:FormatCoordinates(x, y)) or ("unavailable | " .. tostring(reason))))
     end
     local context, reason = self:GetCurrentMapContext(); self:Info("Current map context: " .. (context and tostring(context.mapID) or "nil") .. (reason and (" | " .. reason) or ""))
 end
