@@ -16,10 +16,8 @@ function VG:GetCompatibleGuides(player)
     player = type(player) == "table" and player or {}
     local results = {}
     for _, guide in pairs(self.Guides) do
-        local factionOK = self:IsFactionCompatible(guide.faction, player.faction)
-        local level = tonumber(player.level) or 1
-        local levelOK = (not guide.minLevel or level >= guide.minLevel) and (not guide.maxLevel or level <= guide.maxLevel)
-        if factionOK and levelOK then table.insert(results, guide) end
+        local availability = self:GetGuideAvailability(guide, player)
+        if availability ~= "unavailable" then table.insert(results, guide) end
     end
     table.sort(results, function(a, b) return a.name < b.name end)
     return results
@@ -32,7 +30,7 @@ function VG:GetGuideCompatibility(guide, player)
     local level = tonumber(player.level) or 1
     if not self:IsFactionCompatible(guide.faction, player.faction) then return "unavailable", "requires " .. tostring(self:NormalizeFaction(guide.faction)) end
     if guide.minLevel and level < guide.minLevel then return "unavailable", "requires level " .. guide.minLevel end
-    if guide.maxLevel and level > guide.maxLevel then return "unavailable", "maximum level " .. guide.maxLevel end
+    if guide.maxLevel and level > guide.maxLevel then return "overleveled", "above recommended level" end
     if guide.race and not self:ValueMatches(guide.race, player.race) then return "unavailable", "race requirement" end
     if guide.class and not self:ValueMatches(guide.class, player.class) then return "unavailable", "class requirement" end
     if guide.previousGuide and not (self.db and self.db.guideComplete and self.db.guideComplete[guide.previousGuide]) then return "compatible", "previous guide incomplete" end

@@ -21,8 +21,8 @@ function VG:CreateGuideSelector()
             self.items[index] = button; button:SetSize(310, 36); button:SetPoint("TOP", 0, -48 - (index - 1) * 42)
             local range = string.format("%d–%d", guide.minLevel or 1, guide.maxLevel or 60)
             local availability, reason = VG:GetGuideCompatibility(guide, VG.Player)
-            local label = availability == "development" and VG:T("DEVELOPMENT") or (availability == "recommended" and VG:T("RECOMMENDED") or (availability == "compatible" and VG:T("COMPATIBLE") or VG:T("UNAVAILABLE")))
-            button:SetText("[" .. label .. "] " .. guide.name .. " (" .. range .. ")" .. (availability == "unavailable" and " - " .. tostring(reason) or ""))
+            local label = availability == "development" and VG:T("DEVELOPMENT") or (availability == "recommended" and VG:T("RECOMMENDED") or (availability == "compatible" and VG:T("COMPATIBLE") or (availability == "overleveled" and VG:T("OVERLEVELED") or VG:T("UNAVAILABLE"))))
+            button:SetText("[" .. label .. "] " .. guide.name .. " (" .. range .. ")" .. ((availability == "unavailable" or availability == "overleveled") and " - " .. tostring(reason) or ""))
             button:SetEnabled(availability ~= "unavailable"); button:SetScript("OnClick", function() if VG:SelectGuide(guide.id) then self:Hide() end end); button:Show()
         end
     end

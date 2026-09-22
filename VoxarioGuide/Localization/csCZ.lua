@@ -13,4 +13,5 @@ VG.L.csCZ = {
     PAUSED = "Pozastaveno", RESUMED = "Pokracuje", OPTIONAL = "Volitelne", SECTION = "Sekce", START_NEXT_GUIDE = "Spustit dalsi guide",
     NEXT_GUIDE = "Dalsi doporuceny guide", COMPATIBLE = "Kompatibilni", UNAVAILABLE = "Nedostupne", NO_COMPATIBLE_GUIDES = "Zadne kompatibilni guides.",
     NAVIGATION = "Navigace", NO_WAYPOINT = "Zadny aktivni waypoint.", ARRIVED = "Dorazili jste", SHOW_ARROW = "Zobrazit navigaci", SHOW_DISTANCE = "Zobrazit vzdalenost", AUTO_COMPLETE = "Automaticky dokoncit GO_TO", CURRENT_LOCATION = "Aktualni pozice", LOCATION_UNAVAILABLE = "Aktualni pozice neni dostupna.", TARGET = "Cil",
+    OVERLEVELED = "Nad doporucenou urovni",
 }
