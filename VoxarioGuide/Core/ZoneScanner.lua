@@ -3,7 +3,7 @@ local _, VG = ...
 function VG:InitializeZoneScanner() self.ZoneScanner = self.db.zoneScanner; return self.ZoneScanner end
 function VG:GetZone(mapID)
     mapID = tonumber(mapID); if not mapID then return nil end
-    return (VG.Zones and VG.Zones[mapID]) or (self.ZoneScanner and self.ZoneScanner.maps[mapID])
+    return (self.ZoneScanner and self.ZoneScanner.maps and self.ZoneScanner.maps[mapID]) or (VG.Zones and VG.Zones[mapID])
 end
 function VG:GetZoneName(mapID) local z = self:GetZone(mapID); return z and z.name end
 function VG:GetZoneParent(mapID) local z = self:GetZone(mapID); return z and z.parentMapID end
@@ -23,13 +23,17 @@ function VG:ScanZoneRoot(rootID)
         record.name, record.mapType, record.parentMapID = info.name, info.mapType, info.parentMapID
         record.children = {}
         scanner.maps[mapID] = record
+        self:Debug("ZoneScanner stored map " .. mapID)
         -- TODO VERIFY FOREVER API: child-query signature is guarded; unsupported clients simply retain this map.
         if C_Map.GetMapChildrenInfo then
             local childOK, children = pcall(C_Map.GetMapChildrenInfo, mapID)
             if childOK and type(children) == "table" then for _, child in ipairs(children) do if child and tonumber(child.mapID) then table.insert(record.children, child.mapID); scan(child.mapID, depth + 1) end end end
         end
     end
-    scan(rootID, 0); scanner.roots[rootID] = true; scanner.lastScan = time(); self:Info(string.format("%s: %d", self:T("SCAN_COMPLETE"), count)); return count > 0
+    scan(rootID, 0); scanner.roots[rootID] = true; scanner.lastScan = time()
+    local stored = 0; for _ in pairs(scanner.maps) do stored = stored + 1 end
+    self:Debug("ZoneScanner runtime maps: " .. stored)
+    self:Info(string.format("%s: %d", self:T("SCAN_COMPLETE"), count)); return count > 0
 end
 function VG:ScanCurrentZone() local context, reason = self:GetCurrentMapContext(); if not context or not context.mapID then self:Warn((self:T("SCAN_FAILED")) .. ": " .. tostring(reason)); return false end; return self:ScanZoneRoot(context.mapID) end
 function VG:ShowZoneStatus()
@@ -38,7 +42,8 @@ function VG:ShowZoneStatus()
 end
 function VG:FindZones(query)
     query = string.lower(query or ""); if query == "" then self:Warn("Usage: /vg zones find <name>"); return end
-    local matches = 0; for id, zone in pairs(self:InitializeZoneScanner().maps) do if type(zone.name) == "string" and string.find(string.lower(zone.name), query, 1, true) then self:Info(string.format("%s: %s | type %s | parent %s | scanned", id, zone.name, zone.mapType or "?", zone.parentMapID or "?")); matches = matches + 1; if matches >= 20 then break end end end
+    local matches, zones = 0, {}; for id, zone in pairs(VG.Zones or {}) do zones[tonumber(id) or id] = zone end; for id, zone in pairs(self:InitializeZoneScanner().maps) do zones[tonumber(id) or id] = zone end
+    for id, zone in pairs(zones) do if type(zone.name) == "string" and string.find(string.lower(zone.name), query, 1, true) then self:Info(string.format("%s: %s | type %s | parent %s | %s", id, zone.name, zone.mapType or "?", zone.parentMapID or "?", zone.source or "static")); matches = matches + 1; if matches >= 20 then break end end end
     if matches == 0 then self:Info(self:T("ZONE_NOT_FOUND")) end
 end
 function VG:ValidateZones()
