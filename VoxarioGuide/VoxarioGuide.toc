@@ -1,0 +1,29 @@
+## Interface: 16001
+## Title: Voxario Guide
+## Notes: A lightweight, open-source step-by-step leveling guide for World of Warcraft: Forever.
+## Author: StudioVoxario
+## Version: 0.1.0-alpha
+## SavedVariables: VoxarioGuideDB
+
+Core\Bootstrap.lua
+Core\Utils.lua
+Localization\enUS.lua
+Localization\csCZ.lua
+Data\Constants.lua
+Data\Zones.lua
+Data\NPCs.lua
+Core\PlayerState.lua
+Core\QuestState.lua
+Core\GuideRegistry.lua
+Core\StepEngine.lua
+Core\Navigation.lua
+Core\GuideEngine.lua
+UI\GuideFrame.lua
+UI\StepFrame.lua
+UI\NavigationArrow.lua
+UI\GuideSelector.lua
+UI\Settings.lua
+UI\DebugPanel.lua
+Guides\Alliance\TestRoute.lua
+Guides\Horde\TestRoute.lua
+Core\Events.lua
