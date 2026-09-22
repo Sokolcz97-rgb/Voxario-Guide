@@ -45,6 +45,7 @@ SlashCmdList.VOXARIOGUIDE = function(message)
     local command, argument = (message or ""):match("^%s*(%S*)%s*(.-)%s*$")
     command, argument = string.lower(command or ""), argument or ""
     if command == "help" then VG:ShowHelp()
+    elseif command == "devmode" then VG.db.settings.devMode = not VG.db.settings.devMode; VG:Info("Developer Mode: " .. (VG.db.settings.devMode and "ON" or "OFF"))
     elseif command == "pause" then VG:SetGuidePaused(true); VG:Info(VG:T("PAUSED"))
     elseif command == "resume" then VG:SetGuidePaused(false); VG:Info(VG:T("RESUMED"))
     elseif command == "record" then
@@ -67,6 +68,6 @@ SlashCmdList.VOXARIOGUIDE = function(message)
 end
 
 function VG:ShowHelp()
-    self:Info("/vg, /vg help, /vg guides, /vg status, /vg reset, /vg pause, /vg resume, /vg debug, /vg version")
+    self:Info("/vg, /vg help, /vg guides, /vg status, /vg reset, /vg pause, /vg resume, /vg debug, /vg devmode, /vg version")
     self:Info("Recorder: /vg record start|stop|status|clear|export, /vg mark [note], /vg note <text>")
 end

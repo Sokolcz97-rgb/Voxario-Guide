@@ -34,6 +34,11 @@ function VG:SelectGuide(guideID)
         self:ClearInvalidGuide(guide)
         return false
     end
+    if guide.category ~= "development" and self:GetGuideAvailability(guide, self.Player) == "unavailable" then
+        self:Warn("Guide is not compatible with this character.")
+        self.db.selectedGuide = nil
+        return false
+    end
     local isNewSelection = self.db.selectedGuide ~= guideID
     if isNewSelection then self.db.currentStep = 1 end
     self.db.selectedGuide = guideID

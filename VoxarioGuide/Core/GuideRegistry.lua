@@ -27,6 +27,7 @@ end
 
 function VG:GetGuideAvailability(guide, player)
     if type(guide) ~= "table" then return "unavailable" end
+    if guide.category == "development" then return "development" end
     player = type(player) == "table" and player or {}
     local level = tonumber(player.level) or 1
     if (guide.faction and guide.faction ~= player.faction) or (guide.minLevel and level < guide.minLevel) or (guide.maxLevel and level > guide.maxLevel) then return "unavailable" end

@@ -14,6 +14,7 @@ Status: **0.3.0-alpha — early development / Forever Beta validation required.*
 - Developer-only Guide Recorder that captures legitimate quest events, manual waypoints, and notes in a reload-safe temporary route.
 - Location-independent Development Test Guide for testing UI, controls, reload recovery, and completion state.
 - Dynamic Guide Engine with nested conditions, sections, optional steps, pause/resume, recommendations, and manual guide chaining.
+- Development-category guides are selectable on any character while real incompatible guides remain disabled.
 
 ## Installation
 
@@ -36,6 +37,7 @@ The target TOC interface is `16001`. Update [VoxarioGuide.toc](VoxarioGuide/Voxa
 | `/vg help` | Print the available commands. |
 | `/vg pause` | Pause automatic guide resolution. |
 | `/vg resume` | Resume automatic guide resolution. |
+| `/vg devmode` | Toggle persisted development diagnostics; it never enables incompatible real guides. |
 | `/vg record start` | Start recording a temporary development route. |
 | `/vg record stop` | Stop recording while preserving its steps. |
 | `/vg record status` | Print recorder state and step count. |
@@ -59,6 +61,8 @@ Recorder data survives reloads, but recording itself is switched **off** on logi
 ## Dynamic guide metadata
 
 Guides may declare `category`, `priority`, `previousGuide`, `nextGuide`, and `sections`. Steps may declare `section`, `optional = true`, and `conditions`. Conditions combine ordinary fields (`minLevel`, `maxLevel`, `faction`, `race`, `class`, quest state, and `previousStep`) with readable nested `allOf`, `anyOf`, and `not` groups. Invalid or already-completed steps resolve forward through one bounded resolver path; automatic skips never enter manual skip history.
+
+Guides with `category = "development"` remain selectable regardless of guide metadata compatibility. This does not change the player's real faction, race, class, or level, so all internal step conditions continue to test actual player state. Non-development guides remain unavailable and disabled when their faction, level, race, or class metadata does not match.
 
 Use `/vg mark Enter the cave` to create a waypoint while building a route. Use `/vg note Sell junk and repair` for a note. `/vg record export` opens valid Lua guide data in a scrollable copyable box. It intentionally omits unavailable titles and positions rather than inventing values.
 

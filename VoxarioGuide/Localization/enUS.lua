@@ -7,7 +7,7 @@ VG.L.enUS = {
     WAYPOINT = "Travel to %s", IMPORTANT_SKIP = "This is an important step. Skip it?",
     YES = "Yes", NO = "No", LOCKED = "Locked", UNLOCKED = "Unlocked",
     DEBUG = "Debug", MINIMIZE = "Minimize", RESTORE = "Restore", RESET_CONFIRM = "Reset the current guide?",
-    RECOMMENDED = "Recommended", DEVELOPMENT = "Development route — no verified quest IDs included.",
+    RECOMMENDED = "Recommended", DEVELOPMENT = "Development",
     NO_GUIDE_SELECTED = "No guide selected", CHOOSE_GUIDE = "Choose Guide", RESTART_GUIDE = "Restart Guide",
     LOCK = "Lock", UNLOCK = "Unlock", DEVELOPMENT_TEST_GUIDE = "Development Test Guide",
     PAUSED = "Paused", RESUMED = "Resumed", OPTIONAL = "Optional", SECTION = "Section", START_NEXT_GUIDE = "Start Next Guide",
