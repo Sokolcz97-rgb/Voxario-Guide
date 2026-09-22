@@ -2,7 +2,7 @@
 
 **Voxario Guide** is a free, open-source, step-by-step leveling and quest-guide addon for **World of Warcraft: Forever**. It advises the player and reacts only to legitimate game state. It never moves a character, selects targets, casts abilities, or performs protected actions.
 
-Status: **0.3.0-alpha — early development / Forever Beta validation required.**
+Status: **0.4.0-alpha — early development / Forever Beta validation required.**
 
 ## Features
 
@@ -15,6 +15,7 @@ Status: **0.3.0-alpha — early development / Forever Beta validation required.*
 - Location-independent Development Test Guide for testing UI, controls, reload recovery, and completion state.
 - Dynamic Guide Engine with nested conditions, sections, optional steps, pause/resume, recommendations, and manual guide chaining.
 - Development-category guides are selectable on any character while real incompatible guides remain disabled.
+- Centralized waypoint navigation with normalized coordinates and safe coordinate fallback.
 
 ## Installation
 
@@ -38,6 +39,10 @@ The target TOC interface is `16001`. Update [VoxarioGuide.toc](VoxarioGuide/Voxa
 | `/vg pause` | Pause automatic guide resolution. |
 | `/vg resume` | Resume automatic guide resolution. |
 | `/vg devmode` | Toggle persisted development diagnostics; it never enables incompatible real guides. |
+| `/vg nav` | Print active waypoint state. |
+| `/vg nav clear` | Clear the temporary active waypoint. |
+| `/vg navhere` | Create a temporary waypoint at the current verified map position. |
+| `/vg location` | Print current map ID and coordinates when available. |
 | `/vg record start` | Start recording a temporary development route. |
 | `/vg record stop` | Stop recording while preserving its steps. |
 | `/vg record status` | Print recorder state and step count. |
@@ -63,6 +68,12 @@ Recorder data survives reloads, but recording itself is switched **off** on logi
 Guides may declare `category`, `priority`, `previousGuide`, `nextGuide`, and `sections`. Steps may declare `section`, `optional = true`, and `conditions`. Conditions combine ordinary fields (`minLevel`, `maxLevel`, `faction`, `race`, `class`, quest state, and `previousStep`) with readable nested `allOf`, `anyOf`, and `not` groups. Invalid or already-completed steps resolve forward through one bounded resolver path; automatic skips never enter manual skip history.
 
 Guides with `category = "development"` remain selectable regardless of guide metadata compatibility. This does not change the player's real faction, race, class, or level, so all internal step conditions continue to test actual player state. Non-development guides remain unavailable and disabled when their faction, level, race, or class metadata does not match.
+
+## Navigation and waypoints
+
+Any step may contain `mapID`, normalized `x`/`y` coordinates, and optional `targetName`. When active, it creates the shared waypoint used by the guide window and navigation element. Coordinates are stored internally as `0.0–1.0`; explicit percentage values such as `52.4, 37.8` are normalized to `0.524, 0.378`. Invalid values clear the waypoint safely.
+
+Forever distance and player-facing APIs have not yet been verified for reliable yard/direction calculations. Therefore 0.4.0-alpha displays target labels and coordinates only; it does not fabricate a direction arrow, yard distance, or GO_TO arrival completion. The settings defaults are persisted for future verified implementations, with GO_TO auto-complete disabled.
 
 Use `/vg mark Enter the cave` to create a waypoint while building a route. Use `/vg note Sell junk and repair` for a note. `/vg record export` opens valid Lua guide data in a scrollable copyable box. It intentionally omits unavailable titles and positions rather than inventing values.
 

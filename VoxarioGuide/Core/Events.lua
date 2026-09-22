@@ -45,6 +45,9 @@ SlashCmdList.VOXARIOGUIDE = function(message)
     local command, argument = (message or ""):match("^%s*(%S*)%s*(.-)%s*$")
     command, argument = string.lower(command or ""), argument or ""
     if command == "help" then VG:ShowHelp()
+    elseif command == "nav" then if string.lower(argument) == "clear" then VG:ClearWaypoint(); VG:Info(VG:T("NO_WAYPOINT")) else VG:ShowNavigationStatus() end
+    elseif command == "navhere" then VG:SetNavigationHere()
+    elseif command == "location" then VG:ShowCurrentLocation()
     elseif command == "devmode" then VG.db.settings.devMode = not VG.db.settings.devMode; VG:Info("Developer Mode: " .. (VG.db.settings.devMode and "ON" or "OFF"))
     elseif command == "pause" then VG:SetGuidePaused(true); VG:Info(VG:T("PAUSED"))
     elseif command == "resume" then VG:SetGuidePaused(false); VG:Info(VG:T("RESUMED"))
@@ -68,6 +71,6 @@ SlashCmdList.VOXARIOGUIDE = function(message)
 end
 
 function VG:ShowHelp()
-    self:Info("/vg, /vg help, /vg guides, /vg status, /vg reset, /vg pause, /vg resume, /vg debug, /vg devmode, /vg version")
+    self:Info("/vg, /vg help, /vg guides, /vg status, /vg reset, /vg pause, /vg resume, /vg nav [clear], /vg navhere, /vg location, /vg debug, /vg devmode, /vg version")
     self:Info("Recorder: /vg record start|stop|status|clear|export, /vg mark [note], /vg note <text>")
 end

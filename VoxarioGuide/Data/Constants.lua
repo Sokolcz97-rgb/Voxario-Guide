@@ -5,3 +5,4 @@ VG.StepTypes = {
     USE_HEARTH = true, FLIGHT_PATH = true, TRAIN = true, BUY = true, NOTE = true,
 }
 VG.Factions = { Alliance = true, Horde = true }
+VG.NavigationConstants = { ARRIVAL_DISTANCE = 15 } -- TODO VERIFY FOREVER API unit before enabling auto-complete.

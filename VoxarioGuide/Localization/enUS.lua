@@ -12,4 +12,5 @@ VG.L.enUS = {
     LOCK = "Lock", UNLOCK = "Unlock", DEVELOPMENT_TEST_GUIDE = "Development Test Guide",
     PAUSED = "Paused", RESUMED = "Resumed", OPTIONAL = "Optional", SECTION = "Section", START_NEXT_GUIDE = "Start Next Guide",
     NEXT_GUIDE = "Next recommended guide", COMPATIBLE = "Compatible", UNAVAILABLE = "Unavailable", NO_COMPATIBLE_GUIDES = "No compatible guides.",
+    NAVIGATION = "Navigation", NO_WAYPOINT = "No active waypoint.", ARRIVED = "Arrived", SHOW_ARROW = "Show Navigation", SHOW_DISTANCE = "Show Distance", AUTO_COMPLETE = "Auto-complete GO_TO", CURRENT_LOCATION = "Current location", LOCATION_UNAVAILABLE = "Current location is unavailable.", TARGET = "Target",
 }
