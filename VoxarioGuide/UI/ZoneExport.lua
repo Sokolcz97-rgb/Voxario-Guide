@@ -6,7 +6,7 @@ local function quote(value)
 end
 
 function VG:BuildZoneExport(scannedMaps)
-    local maps = scannedMaps or self:InitializeZoneScanner().maps
+    local maps = scannedMaps or self:GetScannedMaps()
     local ids, seen = {}, {}
     for key, zone in pairs(maps) do
         local mapID = tonumber(key)
@@ -25,7 +25,8 @@ function VG:BuildZoneExport(scannedMaps)
     end
     table.insert(lines, "}")
     local export = table.concat(lines, "\n")
-    self:Debug("Zone exporter received maps: " .. #ids .. " | generated export length: " .. #export .. " bytes")
+    self:Debug("Exporter maps: " .. #ids)
+    self:Debug("Export generated: " .. #export .. " bytes")
     return export
 end
 
@@ -39,8 +40,10 @@ function VG:CreateZoneExportFrame()
     scroll:SetPoint("TOPLEFT", 18, -20); scroll:SetPoint("BOTTOMRIGHT", -32, 18)
     local edit = CreateFrame("EditBox", nil, scroll)
     edit:SetMultiLine(true); edit:SetAutoFocus(false)
-    if ChatFontNormal then edit:SetFontObject(ChatFontNormal) end
+    if ChatFontNormal then edit:SetFontObject(ChatFontNormal) elseif STANDARD_TEXT_FONT then edit:SetFont(STANDARD_TEXT_FONT, 12, "") end
     edit:SetWidth(510); edit:SetHeight(380); edit:SetTextInsets(6, 6, 6, 6)
+    edit:EnableMouse(true)
+    edit:SetScript("OnMouseUp", function(self) self:SetFocus() end)
     edit:SetScript("OnEscapePressed", function() frame:Hide() end)
     scroll:SetScrollChild(edit)
     frame.edit = edit
@@ -49,8 +52,9 @@ function VG:CreateZoneExportFrame()
 end
 
 function VG:ShowZoneExport()
-    local maps = self:InitializeZoneScanner().maps
+    local maps = self:GetScannedMaps()
     if not next(maps) then self:Warn("No scanned zone data available. Run /vg zones scan current or /vg zones scan <mapID> first."); return end
     local frame, export = self:CreateZoneExportFrame(), self:BuildZoneExport(maps)
-    frame.edit:SetText(export); frame.edit:SetHeight(math.max(380, frame.edit:GetStringHeight() + 20)); frame.edit:HighlightText(); frame:Show()
+    frame.edit:SetText(export); frame.edit:SetHeight(math.max(380, frame.edit:GetStringHeight() + 20)); frame:Show(); frame.edit:SetFocus(); frame.edit:HighlightText()
+    self:Debug("Export edit box text: " .. #(frame.edit:GetText() or "") .. " bytes")
 end
