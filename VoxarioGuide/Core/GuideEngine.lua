@@ -34,8 +34,9 @@ function VG:SelectGuide(guideID)
         self:ClearInvalidGuide(guide)
         return false
     end
-    if guide.category ~= "development" and self:GetGuideAvailability(guide, self.Player) == "unavailable" then
-        self:Warn("Guide is not compatible with this character.")
+    local compatibility, reason = self:GetGuideCompatibility(guide, self.Player)
+    if compatibility == "unavailable" then
+        self:Warn("Guide is not compatible: " .. tostring(reason))
         self.db.selectedGuide = nil
         return false
     end

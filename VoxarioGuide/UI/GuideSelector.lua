@@ -20,9 +20,9 @@ function VG:CreateGuideSelector()
             local button = self.items[index] or CreateFrame("Button", nil, self, "UIPanelButtonTemplate")
             self.items[index] = button; button:SetSize(310, 36); button:SetPoint("TOP", 0, -48 - (index - 1) * 42)
             local range = string.format("%d–%d", guide.minLevel or 1, guide.maxLevel or 60)
-            local availability = VG:GetGuideAvailability(guide, VG.Player)
+            local availability, reason = VG:GetGuideCompatibility(guide, VG.Player)
             local label = availability == "development" and VG:T("DEVELOPMENT") or (availability == "recommended" and VG:T("RECOMMENDED") or (availability == "compatible" and VG:T("COMPATIBLE") or VG:T("UNAVAILABLE")))
-            button:SetText("[" .. label .. "] " .. guide.name .. " (" .. range .. ")")
+            button:SetText("[" .. label .. "] " .. guide.name .. " (" .. range .. ")" .. (availability == "unavailable" and " - " .. tostring(reason) or ""))
             button:SetEnabled(availability ~= "unavailable"); button:SetScript("OnClick", function() if VG:SelectGuide(guide.id) then self:Hide() end end); button:Show()
         end
     end

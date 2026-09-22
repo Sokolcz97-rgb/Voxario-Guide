@@ -1,7 +1,7 @@
 local _, VG = ...
 
 VG:RegisterGuide({
-    id = "HORDE_DEVELOPMENT_STARTER", name = "Horde Starter Development", faction = "Horde", minLevel = 1, maxLevel = 10,
+    id = "HORDE_DEVELOPMENT_STARTER", name = "Horde Starter Development", category = "development", faction = "Horde", minLevel = 1, maxLevel = 10,
     description = "Safe development route without unverified Forever quest IDs.",
     steps = {
         { type = "NOTE", important = true, text = { enUS = "Development route: use this guide to verify Voxario's UI and controls.", csCZ = "Vývojová trasa: ověřte zde UI a ovládání Voxario." } },

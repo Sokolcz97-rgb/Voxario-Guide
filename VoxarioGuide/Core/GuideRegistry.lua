@@ -16,7 +16,7 @@ function VG:GetCompatibleGuides(player)
     player = type(player) == "table" and player or {}
     local results = {}
     for _, guide in pairs(self.Guides) do
-        local factionOK = not guide.faction or guide.faction == player.faction
+        local factionOK = self:IsFactionCompatible(guide.faction, player.faction)
         local level = tonumber(player.level) or 1
         local levelOK = (not guide.minLevel or level >= guide.minLevel) and (not guide.maxLevel or level <= guide.maxLevel)
         if factionOK and levelOK then table.insert(results, guide) end
@@ -25,14 +25,20 @@ function VG:GetCompatibleGuides(player)
     return results
 end
 
-function VG:GetGuideAvailability(guide, player)
+function VG:GetGuideCompatibility(guide, player)
     if type(guide) ~= "table" then return "unavailable" end
-    if guide.category == "development" then return "development" end
+    if guide.category == "development" then return "development", "development guide" end
     player = type(player) == "table" and player or {}
     local level = tonumber(player.level) or 1
-    if (guide.faction and guide.faction ~= player.faction) or (guide.minLevel and level < guide.minLevel) or (guide.maxLevel and level > guide.maxLevel) then return "unavailable" end
-    if guide.race and not self:ValueMatches(guide.race, player.race) then return "unavailable" end
-    if guide.class and not self:ValueMatches(guide.class, player.class) then return "unavailable" end
-    if guide.previousGuide and not (self.db and self.db.guideComplete and self.db.guideComplete[guide.previousGuide]) then return "compatible" end
-    return "recommended"
+    if not self:IsFactionCompatible(guide.faction, player.faction) then return "unavailable", "requires " .. tostring(self:NormalizeFaction(guide.faction)) end
+    if guide.minLevel and level < guide.minLevel then return "unavailable", "requires level " .. guide.minLevel end
+    if guide.maxLevel and level > guide.maxLevel then return "unavailable", "maximum level " .. guide.maxLevel end
+    if guide.race and not self:ValueMatches(guide.race, player.race) then return "unavailable", "race requirement" end
+    if guide.class and not self:ValueMatches(guide.class, player.class) then return "unavailable", "class requirement" end
+    if guide.previousGuide and not (self.db and self.db.guideComplete and self.db.guideComplete[guide.previousGuide]) then return "compatible", "previous guide incomplete" end
+    return "recommended", "compatible"
+end
+
+function VG:GetGuideAvailability(guide, player)
+    return self:GetGuideCompatibility(guide, player)
 end

@@ -1,9 +1,22 @@
 local _, VG = ...
 
+function VG:NormalizeFaction(value)
+    if type(value) ~= "string" then return nil end
+    local normalized = string.lower(value)
+    if normalized == "horde" then return "Horde" end
+    if normalized == "alliance" then return "Alliance" end
+    return value
+end
+
+function VG:IsFactionCompatible(guideFaction, playerFaction)
+    if not guideFaction then return true end
+    return self:NormalizeFaction(guideFaction) == self:NormalizeFaction(playerFaction)
+end
+
 function VG:UpdatePlayerState()
     local _, class = UnitClass("player")
     local raceName, race = UnitRace("player")
-    local faction = UnitFactionGroup("player")
+    local faction = self:NormalizeFaction(UnitFactionGroup("player"))
     self.Player = {
         name = UnitName("player"), level = UnitLevel("player") or 1, class = class,
         race = race or raceName, faction = faction, mapID = self:GetPlayerMapID(),

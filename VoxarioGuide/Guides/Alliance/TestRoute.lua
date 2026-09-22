@@ -1,7 +1,7 @@
 local _, VG = ...
 
 VG:RegisterGuide({
-    id = "ALLIANCE_DEVELOPMENT_STARTER", name = "Alliance Starter Development", faction = "Alliance", minLevel = 1, maxLevel = 10,
+    id = "ALLIANCE_DEVELOPMENT_STARTER", name = "Alliance Starter Development", category = "development", faction = "Alliance", minLevel = 1, maxLevel = 10,
     description = "Safe development route without unverified Forever quest IDs.",
     steps = {
         { type = "NOTE", important = true, text = { enUS = "Development route: use this guide to verify Voxario's UI and controls.", csCZ = "Vývojová trasa: ověřte zde UI a ovládání Voxario." } },
