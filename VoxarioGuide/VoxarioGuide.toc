@@ -14,6 +14,10 @@ Data\Zones.lua
 Data\NPCs.lua
 Data\Quests.lua
 Data\Items.lua
+Data\Generated\Zones.lua
+Data\Generated\Quests.lua
+Data\Generated\NPCs.lua
+Data\Generated\Items.lua
 Core\PlayerState.lua
 Core\QuestState.lua
 Core\GuideRegistry.lua
