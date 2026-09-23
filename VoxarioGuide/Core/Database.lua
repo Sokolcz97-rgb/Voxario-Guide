@@ -30,7 +30,13 @@ function VG:ShowDatabaseStatus()
     local quests, npcs, objectives, verified, pending = VG.Quests or {}, VG.NPCs or {}, 0, 0, 0
     for _, quest in pairs(quests) do objectives = objectives + #(quest.objectives or {}); if quest.verification == "verified" or quest.verification == "forever_client" then verified = verified + 1 else pending = pending + 1 end end
     for _, npc in pairs(npcs) do if npc.verification == "verified" or npc.verification == "forever_client" then verified = verified + 1 else pending = pending + 1 end end
-    self:Info(string.format("Database | Zones: %d | Quests: %d | NPCs: %d | Objectives: %d | Verified: %d | Pending: %d", count(self:GetMergedZones()), count(quests), count(npcs), objectives, verified, pending))
+    self:Info(string.format("Database | Zones: %d | Quests: %d | NPCs: %d | Items: %d | Objectives: %d | Verified: %d | Pending: %d", count(self:GetMergedZones()), count(quests), count(npcs), count(VG.Items), objectives, verified, pending))
+end
+function VG:ShowDatabaseCoverage()
+    local names, objectives, starts, ends, locations = 0, 0, 0, 0, 0
+    for _, q in pairs(VG.Quests or {}) do if q.name then names=names+1 end; if #(q.objectives or {})>0 then objectives=objectives+1 end; if #(q.starts or {})>0 then starts=starts+1 end; if #(q.ends or {})>0 then ends=ends+1 end end
+    for _, n in pairs(VG.NPCs or {}) do if #(n.locations or {})>0 then locations=locations+1 end end
+    self:Info(string.format("Coverage | Quest names: %d | Objectives: %d | Starts: %d | Ends: %d | NPC locations: %d", names, objectives, starts, ends, locations))
 end
 function VG:ValidateDataDatabase()
     local errors, warnings = 0, 0

@@ -2,7 +2,7 @@
 ## Title: Voxario Guide
 ## Notes: A lightweight, open-source step-by-step leveling guide for World of Warcraft: Forever.
 ## Author: StudioVoxario
-## Version: 0.5.3-alpha
+## Version: 0.5.4-alpha
 ## SavedVariables: VoxarioGuideDB
 
 Core\Bootstrap.lua
@@ -13,6 +13,7 @@ Data\Constants.lua
 Data\Zones.lua
 Data\NPCs.lua
 Data\Quests.lua
+Data\Items.lua
 Core\PlayerState.lua
 Core\QuestState.lua
 Core\GuideRegistry.lua

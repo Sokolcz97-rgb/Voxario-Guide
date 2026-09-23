@@ -48,7 +48,7 @@ SlashCmdList.VOXARIOGUIDE = function(message)
     elseif command == "mapapi" then VG:ShowMapAPIDiagnostics()
     elseif command == "quest" then VG:ShowQuestData(argument)
     elseif command == "npc" then VG:ShowNPCData(argument)
-    elseif command == "database" then if string.lower(argument) == "validate" then VG:ValidateDataDatabase() else VG:ShowDatabaseStatus() end
+    elseif command == "database" then if string.lower(argument) == "validate" then VG:ValidateDataDatabase() elseif string.lower(argument) == "coverage" then VG:ShowDatabaseCoverage() else VG:ShowDatabaseStatus() end
     elseif command == "zones" then
         local action, rest = argument:match("^(%S*)%s*(.-)%s*$"); action = string.lower(action or "")
         if action == "scan" and string.lower(rest) == "current" then VG:ScanCurrentZone()
