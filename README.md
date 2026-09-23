@@ -2,7 +2,7 @@
 
 **Voxario Guide** is a free, open-source, step-by-step leveling and quest-guide addon for **World of Warcraft: Forever**. It advises the player and reacts only to legitimate game state. It never moves a character, selects targets, casts abilities, or performs protected actions.
 
-Status: **0.5.2-alpha — early development / Forever Beta validation required.**
+Status: **0.5.3-alpha — early development / Forever Beta validation required.**
 
 ## Features
 
@@ -81,6 +81,12 @@ Runtime discoveries persist in `VoxarioGuideDB.zoneScanner.maps`. Bundled `Data/
 
 Normal guide selection, guide progression, navigation, zone lookup, SavedVariables, and UI do not require recorder data. The Guide Selector now uses a bounded scrollable viewport so large guide lists remain contained at supported UI scales.
 
+## Quest and NPC data foundation
+
+`Data/Quests.lua` and `Data/NPCs.lua` are static numeric-ID databases intended for verified Forever route data. Quest records can include level, faction, authoritative `zoneMapID`, objectives, start/end NPC IDs, chain metadata, source/build provenance, and verification state. NPC records support multiple map locations. Unknown fields remain absent rather than guessed.
+
+Use `/vg quest <id|name>`, `/vg npc <id|name>`, `/vg database status`, and `/vg database validate` while developing data. The importer design is documented in [tools/README.md](tools/README.md): external JSON/CSV or generated Lua must be normalized and reviewed outside the addon, then committed as static Lua. Public databases are development inputs only; the addon has no runtime network dependency.
+
 ## Development Test Guide
 
 `Development Test Guide` has five `NOTE` steps and is available to every faction from any location. It contains no quest IDs, map IDs, or live leveling content. Use it to verify Previous/Next/Skip boundaries, reload recovery, frame settings, and the Guide Complete state.
@@ -97,7 +103,7 @@ Guides with `category = "development"` remain selectable regardless of guide met
 
 Any step may contain `mapID`, normalized `x`/`y` coordinates, and optional `targetName`. When active, it creates the shared waypoint used by the guide window and navigation element. Coordinates are stored internally as `0.0–1.0`; explicit percentage values such as `52.4, 37.8` are normalized to `0.524, 0.378`. Invalid values clear the waypoint safely.
 
-Forever distance and player-facing APIs have not yet been verified for reliable yard/direction calculations. Therefore 0.5.2-alpha displays target labels and coordinates only; it does not fabricate a direction arrow, yard distance, or GO_TO arrival completion. The settings defaults are persisted for future verified implementations, with GO_TO auto-complete disabled.
+Forever distance and player-facing APIs have not yet been verified for reliable yard/direction calculations. Therefore 0.5.3-alpha displays target labels and coordinates only; it does not fabricate a direction arrow, yard distance, or GO_TO arrival completion. The settings defaults are persisted for future verified implementations, with GO_TO auto-complete disabled.
 
 ## Content status
 

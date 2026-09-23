@@ -1,2 +1,2 @@
 local _, VG = ...
-VG.NPCs = {}
+VG.NPCs = VG.NPCs or {}

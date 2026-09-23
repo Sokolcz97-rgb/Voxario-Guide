@@ -46,6 +46,9 @@ SlashCmdList.VOXARIOGUIDE = function(message)
     command, argument = string.lower(command or ""), argument or ""
     if command == "help" then VG:ShowHelp()
     elseif command == "mapapi" then VG:ShowMapAPIDiagnostics()
+    elseif command == "quest" then VG:ShowQuestData(argument)
+    elseif command == "npc" then VG:ShowNPCData(argument)
+    elseif command == "database" then if string.lower(argument) == "validate" then VG:ValidateDataDatabase() else VG:ShowDatabaseStatus() end
     elseif command == "zones" then
         local action, rest = argument:match("^(%S*)%s*(.-)%s*$"); action = string.lower(action or "")
         if action == "scan" and string.lower(rest) == "current" then VG:ScanCurrentZone()
@@ -87,7 +90,7 @@ SlashCmdList.VOXARIOGUIDE = function(message)
 end
 
 function VG:ShowHelp()
-    self:Info("/vg, /vg help, /vg mapapi, /vg guides, /vg status, /vg reset, /vg step <n>, /vg validate, /vg zones, /vg pause, /vg resume, /vg nav [clear], /vg navhere, /vg location, /vg debug, /vg devmode, /vg version")
+    self:Info("/vg, /vg help, /vg quest <id|name>, /vg npc <id|name>, /vg database [validate], /vg guides, /vg status, /vg reset, /vg step <n>, /vg validate, /vg zones, /vg pause, /vg resume, /vg nav [clear], /vg navhere, /vg location, /vg debug, /vg devmode, /vg version")
     self:Info("Zones: /vg zones ancestors, scan current|tree <mapID>|hierarchy, status, find <name>, export [merged], validate")
     self:Info("Recorder: /vg record start|stop|status|clear|export, /vg mark [note], /vg note <text>")
 end
