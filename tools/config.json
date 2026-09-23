@@ -2,8 +2,8 @@
   "foreverBuild": "1.60.1.69913",
   "sources": {
     "wagoDb2": {
-      "enabled": false,
-      "reason": "Add verified CSV URLs and observed headers before enabling downloads."
+      "enabled": true,
+      "reason": "Pinned Wago CSV endpoints and their build 1.60.1.69913 headers were verified during offline normalization."
     }
   }
 }

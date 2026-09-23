@@ -7,7 +7,10 @@ except ImportError:
 from config import BUILD
 
 REQUIRED = ('Map', 'QuestV2', 'Creature')
-OPTIONAL = ('AreaTable', 'Item', 'ItemSparse')
+# These tables were verified against the pinned Forever build.  QuestV2 itself
+# only identifies quests; the POI and quest-line tables add the limited client
+# side relationships that are actually available for this build.
+OPTIONAL = ('AreaTable', 'Item', 'ItemSparse', 'QuestPOIBlob', 'QuestPOIPoint', 'QuestLine', 'QuestLineXQuest')
 BASE = 'https://wago.tools/db2/{table}/csv?build={build}&locale=enUS'
 
 def fetch(session, table, target, refresh):

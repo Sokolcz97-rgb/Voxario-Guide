@@ -1,1 +1,1151 @@
-[]
+[
+  {
+    "mapID": 0,
+    "name": "Eastern Kingdoms",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 1,
+    "name": "Kalimdor",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 13,
+    "name": "Test Dungeon",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Test Dungeon"
+  },
+  {
+    "mapID": 25,
+    "name": "Scott Test",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 29,
+    "name": "CashTest",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 30,
+    "name": "Alterac Valley",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 33,
+    "name": "Shadowfang Keep",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 34,
+    "name": "Stormwind Stockade",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "The Stockade"
+  },
+  {
+    "mapID": 35,
+    "name": "<unused>StormwindPrison",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "The Stockade"
+  },
+  {
+    "mapID": 36,
+    "name": "Deadmines",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 37,
+    "name": "Azshara Crater",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 42,
+    "name": "Collin's Test",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 43,
+    "name": "Wailing Caverns",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Wailing Caverns"
+  },
+  {
+    "mapID": 44,
+    "name": "<unused> Monastery",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 47,
+    "name": "Razorfen Kraul",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 48,
+    "name": "Blackfathom Deeps",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Blackfathom Deeps"
+  },
+  {
+    "mapID": 70,
+    "name": "Uldaman",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Uldaman"
+  },
+  {
+    "mapID": 90,
+    "name": "Gnomeregan",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Gnomeregan"
+  },
+  {
+    "mapID": 109,
+    "name": "Sunken Temple",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "The Temple of Atal'Hakkar"
+  },
+  {
+    "mapID": 129,
+    "name": "Razorfen Downs",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 169,
+    "name": "Emerald Dream",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 189,
+    "name": "Scarlet Monastery",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 209,
+    "name": "Zul'Farrak",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 229,
+    "name": "Blackrock Spire",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Blackrock Spire"
+  },
+  {
+    "mapID": 230,
+    "name": "Blackrock Depths",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Blackrock Depths"
+  },
+  {
+    "mapID": 249,
+    "name": "Onyxia's Lair",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Onyxia's Lair"
+  },
+  {
+    "mapID": 269,
+    "name": "Caverns of Time",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 289,
+    "name": "Scholomance",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 309,
+    "name": "Zul'Gurub",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Zul'Gurub"
+  },
+  {
+    "mapID": 329,
+    "name": "Stratholme",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 349,
+    "name": "Maraudon",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Maraudon"
+  },
+  {
+    "mapID": 369,
+    "name": "Deeprun Tram",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Deeprun Tram"
+  },
+  {
+    "mapID": 389,
+    "name": "Ragefire Chasm",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Ragefire Chasm"
+  },
+  {
+    "mapID": 409,
+    "name": "Molten Core",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Molten Core"
+  },
+  {
+    "mapID": 429,
+    "name": "Dire Maul",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Dire Maul"
+  },
+  {
+    "mapID": 449,
+    "name": "Alliance PVP Barracks",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Champions' Hall"
+  },
+  {
+    "mapID": 450,
+    "name": "Horde PVP Barracks",
+    "parentMapID": -1,
+    "mapType": 2,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Hall of Legends"
+  },
+  {
+    "mapID": 451,
+    "name": "Development Land",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 469,
+    "name": "Blackwing Lair",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Blackwing Lair"
+  },
+  {
+    "mapID": 489,
+    "name": "Warsong Gulch",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Warsong Gulch"
+  },
+  {
+    "mapID": 509,
+    "name": "Ruins of Ahn'Qiraj",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Ruins of Ahn'Qiraj"
+  },
+  {
+    "mapID": 529,
+    "name": "Arathi Basin",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Arathi Basin"
+  },
+  {
+    "mapID": 531,
+    "name": "Ahn'Qiraj Temple",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Ahn'Qiraj"
+  },
+  {
+    "mapID": 533,
+    "name": "Naxxramas",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Naxxramas"
+  },
+  {
+    "mapID": 2720,
+    "name": "The Searing Basin",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2784,
+    "name": "Demon Fall Canyon",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2789,
+    "name": "The Tainted Scar",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2791,
+    "name": "Storm Cliffs",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2804,
+    "name": "The Crystal Vale",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2806,
+    "name": "Shadow Hold",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2807,
+    "name": "Burning of Andorhal",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2817,
+    "name": "Starfall Barrow Den",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2832,
+    "name": "Nightmare Grove",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2853,
+    "name": "Deadwind Pass",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2856,
+    "name": "Scarlet Enclave",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2868,
+    "name": "Eastern Plaguelands (Scarlet Raid Phase)",
+    "parentMapID": 0,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2875,
+    "name": "Karazhan Crypts",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "Karazhan Crypts"
+  },
+  {
+    "mapID": 2902,
+    "name": "The Scarab Dais",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2921,
+    "name": "Naxxramas",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2959,
+    "name": "City of Dalaran",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913",
+      "areaName": "wago_db2:AreaTable.AreaName_lang@1.60.1.69913"
+    },
+    "areaName": "City of Dalaran"
+  },
+  {
+    "mapID": 2980,
+    "name": "Dalaran City",
+    "parentMapID": 0,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2991,
+    "name": "Zephras Isle",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2995,
+    "name": "Hyjal Crater",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2996,
+    "name": "Warsong Gulch (Winter)",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2997,
+    "name": "Darkspear Islands",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2998,
+    "name": "Excavation Site: Wetlands",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 2999,
+    "name": "Ruins of Lordaeron",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 3002,
+    "name": "Half-Pint Tavern",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 3005,
+    "name": "Battle for Gilneas",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 3021,
+    "name": "Eastern Kingdoms Preserved",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 3065,
+    "name": "The Hall of Thanes",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 3104,
+    "name": "nothing to see here",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  },
+  {
+    "mapID": 3109,
+    "name": "Manor Mistmantle",
+    "parentMapID": -1,
+    "mapType": 1,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "mapID": "wago_db2:Map.ID@1.60.1.69913",
+      "name": "wago_db2:Map.MapName_lang@1.60.1.69913",
+      "parentMapID": "wago_db2:Map.ParentMapID@1.60.1.69913",
+      "mapType": "wago_db2:Map.MapType@1.60.1.69913"
+    }
+  }
+]

@@ -15,4 +15,10 @@ for name in required:
   ids.add(record[key])
   if record.get('sourceBuild') not in (None,BUILD): raise SystemExit(f'[VALIDATE] build mismatch in {name}')
  print(f'[VALIDATE] {name}: {len(data)} records')
+coverage=root/'reports'/'quest_data_coverage.json'
+if not coverage.exists(): raise SystemExit(f'[VALIDATE] missing {coverage}')
+report=json.loads(coverage.read_text())
+if report.get('sourceBuild') != BUILD or report.get('quests',{}).get('total') != len(json.loads((root/'quests.json').read_text())):
+ raise SystemExit('[VALIDATE] coverage report does not match normalized quest data')
+print('[VALIDATE] reports/quest_data_coverage.json: consistent')
 print('[VALIDATE] PASS')

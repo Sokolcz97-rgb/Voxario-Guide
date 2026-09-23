@@ -1,1 +1,3562 @@
-[]
+[
+  {
+    "npcID": 2671,
+    "name": "Mechanical Squirrel",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7380,
+    "name": "Siamese",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7381,
+    "name": "Silver Tabby",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7382,
+    "name": "Orange Tabby",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7383,
+    "name": "Black Tabby",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7384,
+    "name": "Cornish Rex",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7385,
+    "name": "Bombay",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7386,
+    "name": "White Kitten",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7387,
+    "name": "Green Wing Macaw",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7388,
+    "name": "Cockatoo",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7389,
+    "name": "Senegal",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7390,
+    "name": "Cockatiel",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7391,
+    "name": "Hyacinth Macaw",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7392,
+    "name": "Prairie Chicken",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7394,
+    "name": "Ancona Chicken",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7395,
+    "name": "Cockroach",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7543,
+    "name": "Dark Whelpling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7544,
+    "name": "Crimson Whelpling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7545,
+    "name": "Emerald Whelpling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7546,
+    "name": "Bronze Whelpling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7547,
+    "name": "Azure Whelpling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7548,
+    "name": "Faeling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7549,
+    "name": "Tree Frog",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7550,
+    "name": "Wood Frog",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7551,
+    "name": "Dart Frog",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7552,
+    "name": "Island Frog",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7553,
+    "name": "Great Horned Owl",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7554,
+    "name": "Snowy Owl",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7555,
+    "name": "Hawk Owl",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7556,
+    "name": "Eagle Owl",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7558,
+    "name": "Cottontail Rabbit",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7559,
+    "name": "Arctic Hare",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7560,
+    "name": "Snowshoe Rabbit",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7561,
+    "name": "Albino Snake",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7562,
+    "name": "Brown Snake",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7565,
+    "name": "Black Kingsnake",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7566,
+    "name": "Scarlet Snake",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7567,
+    "name": "Crimson Snake",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7568,
+    "name": "Ribbon Snake",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7569,
+    "name": "Green Water Snake",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 7570,
+    "name": "Elven Wisp",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 8376,
+    "name": "Mechanical Chicken",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 9656,
+    "name": "Tiny Walking Bomb",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 9657,
+    "name": "Lil' Smoky",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 9662,
+    "name": "Sprite Darter Hatchling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 9936,
+    "name": "Corrupted Kitten",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 10259,
+    "name": "Worg Pup",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 10598,
+    "name": "Smolderweb Hatchling",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 11236,
+    "name": "Blood Parrot",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 11325,
+    "name": "Panda Cub",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 11326,
+    "name": "Mini Diablo",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 11327,
+    "name": "Zergling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 12419,
+    "name": "Lifelike Toad",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 14421,
+    "name": "Brown Prairie Dog",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 14629,
+    "name": "Loggerhead Snapjaw",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 14630,
+    "name": "Leatherback Snapjaw",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 14631,
+    "name": "Olive Snapjaw",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 14632,
+    "name": "Hawksbill Snapjaw",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 14633,
+    "name": "Albino Snapjaw",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 14755,
+    "name": "Tiny Green Dragon",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 14756,
+    "name": "Tiny Red Dragon",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 14878,
+    "name": "Jubling",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15186,
+    "name": "Murky",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15356,
+    "name": "Blue Baby Murloc",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15357,
+    "name": "Purple Baby Murloc",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15358,
+    "name": "White Baby Murloc",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15359,
+    "name": "Pink Baby Murloc",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15360,
+    "name": "Green Baby Murloc",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15361,
+    "name": "Murki",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15429,
+    "name": "Disgusting Oozeling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15661,
+    "name": "Baby Shark",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15698,
+    "name": "Father Winter's Helper",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15699,
+    "name": "Tranquil Mechanical Yeti",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15705,
+    "name": "Winter's Little Helper",
+    "creatureType": 10,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15706,
+    "name": "Winter Reindeer",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 15710,
+    "name": "Tiny Snowman",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 16069,
+    "name": "Gurky",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 16085,
+    "name": "Peddlefeet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 16445,
+    "name": "Terky",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 16456,
+    "name": "Poley",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 16547,
+    "name": "Speedy",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 16548,
+    "name": "Mr. Wiggles",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 16549,
+    "name": "Whiskers the Rat",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 16701,
+    "name": "Spirit of Summer",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 17254,
+    "name": "White Tiger Cub",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 17255,
+    "name": "Hippogryph Hatchling",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 23909,
+    "name": "Sinister Squashling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 55571,
+    "name": "Lunar Lantern",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 55574,
+    "name": "Festival Lantern",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 61544,
+    "name": "Orphan Spell Visual Invisible Holder",
+    "creatureType": 10,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 121295,
+    "name": "Invisible Stalker",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 130357,
+    "name": "Invisible Stalker",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 167875,
+    "name": "RTC Player Dummy",
+    "creatureType": 10,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 259430,
+    "name": "Thief",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 259842,
+    "name": "Musical Gustjumper",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 260580,
+    "name": "Mini Uber Diablo",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 261680,
+    "name": "Snowy Wolf Pup",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 262224,
+    "name": "[DNT] Template Creature",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 262986,
+    "name": "Rusty Wolf Pup",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 263559,
+    "name": "Child of By'zaali",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 264632,
+    "name": "Sister",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 264634,
+    "name": "Leo",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 264636,
+    "name": "Buster",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 264638,
+    "name": "Callie",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 264639,
+    "name": "Bebe",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 265797,
+    "name": "Wild Chicken",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 266025,
+    "name": "Rat Familiar",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 266735,
+    "name": "Excitable Slime",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 267842,
+    "name": "Bitter Baitling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 268707,
+    "name": "Prairie Wolf Pup",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 268744,
+    "name": "Frog Familiar",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 268840,
+    "name": "Spectral Bear Cub",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 270313,
+    "name": "Generic Bunny",
+    "creatureType": 10,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271368,
+    "name": "Shadowgale Squirrel",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271636,
+    "name": "Weevil K. Neevil",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271867,
+    "name": "Pachimari",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271870,
+    "name": "Galestrider Chick",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271874,
+    "name": "Black Furbolg Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271875,
+    "name": "Brown Furbolg Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271876,
+    "name": "Gray Furbolg Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271877,
+    "name": "Tan Furbolg Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271878,
+    "name": "White Furbolg Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271888,
+    "name": "Purple Ent Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271889,
+    "name": "Red Ent Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271890,
+    "name": "Blue Ent Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271891,
+    "name": "Gray Ent Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271892,
+    "name": "Orange Ent Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271893,
+    "name": "Yellow Ent Pet",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271913,
+    "name": "Plagued Cockroach",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271914,
+    "name": "Undercity Cockroach",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271915,
+    "name": "Jungle Boa",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271972,
+    "name": "Brown Prairie Dog",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271979,
+    "name": "Brown Ground Squirrel",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271980,
+    "name": "Red Ground Squirrel",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 271993,
+    "name": "Brown Rabbit",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272012,
+    "name": "Cat Familiar",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272210,
+    "name": "Orc Mage",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272213,
+    "name": "Human Hunter",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272214,
+    "name": "Tauren Druid",
+    "creatureType": 0,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272215,
+    "name": "Night Elf Warrior",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272219,
+    "name": "Troll Warlock",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272226,
+    "name": "Gnome Priest",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272227,
+    "name": "Skyborne Shaman",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272229,
+    "name": "Skyborne Mage Alliance",
+    "creatureType": 0,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272231,
+    "name": "Undead Paladin",
+    "creatureType": 0,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272235,
+    "name": "Dwarf Shaman",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272238,
+    "name": "Orc Warrior",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272239,
+    "name": "Human Warlock",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272241,
+    "name": "Tauren Hunter",
+    "creatureType": 0,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272242,
+    "name": "Night Elf Druid",
+    "creatureType": 0,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272243,
+    "name": "Gnome Rogue",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272245,
+    "name": "Troll Rogue",
+    "creatureType": 0,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272249,
+    "name": "Skyborne Warrior Alliance",
+    "creatureType": 0,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272250,
+    "name": "Skyborne Druid",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272251,
+    "name": "Dwarf Paladin",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272252,
+    "name": "Undead Warlock",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272309,
+    "name": "Tux",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272310,
+    "name": "Mocha",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272328,
+    "name": "Mini Diablo",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272329,
+    "name": "Zergling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272330,
+    "name": "Panda Cub",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 272614,
+    "name": "Cappy",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273391,
+    "name": "Baby Crocolisk",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273916,
+    "name": "Human Paladin",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273917,
+    "name": "Night Elf Priest",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273918,
+    "name": "Skyborne Hunter",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273919,
+    "name": "Dwarf Hunter",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273920,
+    "name": "Human Mage",
+    "creatureType": 0,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273921,
+    "name": "Dwarf Warrior",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273925,
+    "name": "Gnome Warrior",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273926,
+    "name": "Gnome Warlock",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273927,
+    "name": "Night Elf Rogue",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273928,
+    "name": "Human Priest",
+    "creatureType": 7,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273956,
+    "name": "Condor Hatchling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 274334,
+    "name": "Tallstrider Hatchling",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 274412,
+    "name": "Minfernal",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 274947,
+    "name": "Minimule",
+    "creatureType": 12,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  },
+  {
+    "npcID": 273003,
+    "name": "Worg Pup",
+    "creatureType": 1,
+    "classification": 0,
+    "source": "wago_db2",
+    "sourceBuild": "1.60.1.69913",
+    "verification": "external_reference",
+    "provenance": {
+      "npcID": "wago_db2:Creature.ID@1.60.1.69913",
+      "name": "wago_db2:Creature.Name_lang@1.60.1.69913",
+      "creatureType": "wago_db2:Creature.CreatureType@1.60.1.69913",
+      "classification": "wago_db2:Creature.Classification@1.60.1.69913"
+    },
+    "unavailableFromDB2": {
+      "questGiver": "unavailable_from_db2",
+      "turnInNPC": "unavailable_from_db2",
+      "locations": "unavailable_from_db2"
+    }
+  }
+]
