@@ -1,7 +1,7 @@
 local addonName, VG = ...
 
 VG.Name = addonName
-VG.Version = "0.5.1-alpha"
+VG.Version = "0.5.2-alpha"
 VG.Interface = 16001
 VG.Modules = VG.Modules or {}
 VG.L = VG.L or {}
@@ -37,6 +37,9 @@ function VG:InitializeDatabase()
     if type(db.zoneScanner) ~= "table" then db.zoneScanner = {} end
     if type(db.zoneScanner.maps) ~= "table" then db.zoneScanner.maps = {} end
     if type(db.zoneScanner.roots) ~= "table" then db.zoneScanner.roots = {} end
+    db.zoneScanner.lastRoot = tonumber(db.zoneScanner.lastRoot) or nil
+    db.zoneScanner.lastScanCount = math.max(0, math.floor(tonumber(db.zoneScanner.lastScanCount) or 0))
+    if type(db.zoneScanner.lastScanMode) ~= "string" then db.zoneScanner.lastScanMode = nil end
     if type(db.guidePaused) ~= "boolean" then db.guidePaused = false end
     if type(db.completedSteps) ~= "table" then db.completedSteps = {} end
     if type(db.guideComplete) ~= "table" then db.guideComplete = {} end

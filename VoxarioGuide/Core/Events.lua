@@ -15,7 +15,6 @@ end
 
 function VG:OnLogin()
     self:InitializeDatabase()
-    self:InitializeRecorder(true)
     self:InitializeZoneScanner()
     self:UpdatePlayerState()
     self:RefreshQuestState()
@@ -50,12 +49,14 @@ SlashCmdList.VOXARIOGUIDE = function(message)
     elseif command == "zones" then
         local action, rest = argument:match("^(%S*)%s*(.-)%s*$"); action = string.lower(action or "")
         if action == "scan" and string.lower(rest) == "current" then VG:ScanCurrentZone()
-        elseif action == "scan" then VG:ScanZoneRoot(rest)
+        elseif action == "scan" and string.lower(rest) == "hierarchy" then VG:ScanCurrentHierarchy()
+        elseif action == "scan" then local mode, mapID = rest:match("^(%S+)%s*(.-)%s*$"); if string.lower(mode or "") == "tree" then VG:ScanZoneTree(mapID) else VG:ScanZoneRoot(rest) end
+        elseif action == "ancestors" then VG:ShowZoneAncestors()
         elseif action == "status" then VG:ShowZoneStatus()
         elseif action == "find" then VG:FindZones(rest)
-        elseif action == "export" then VG:ShowZoneExport()
+        elseif action == "export" then VG:ShowZoneExport(string.lower(rest) == "merged")
         elseif action == "validate" then VG:ValidateZones()
-        else VG:Info("Usage: /vg zones scan current|<mapID>, status, find <name>, export, validate") end
+        else VG:Info("Usage: /vg zones scan current|tree <mapID>|hierarchy, ancestors, status, find <name>, export [merged], validate") end
     elseif command == "validate" then VG:ValidateRegisteredGuides()
     elseif command == "step" then
         local index = tonumber(argument); local guide = VG:GetCurrentGuide(); local total = VG:GetTotalSteps(guide)
@@ -87,5 +88,6 @@ end
 
 function VG:ShowHelp()
     self:Info("/vg, /vg help, /vg mapapi, /vg guides, /vg status, /vg reset, /vg step <n>, /vg validate, /vg zones, /vg pause, /vg resume, /vg nav [clear], /vg navhere, /vg location, /vg debug, /vg devmode, /vg version")
+    self:Info("Zones: /vg zones ancestors, scan current|tree <mapID>|hierarchy, status, find <name>, export [merged], validate")
     self:Info("Recorder: /vg record start|stop|status|clear|export, /vg mark [note], /vg note <text>")
 end

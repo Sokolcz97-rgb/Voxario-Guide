@@ -2,7 +2,7 @@
 
 **Voxario Guide** is a free, open-source, step-by-step leveling and quest-guide addon for **World of Warcraft: Forever**. It advises the player and reacts only to legitimate game state. It never moves a character, selects targets, casts abilities, or performs protected actions.
 
-Status: **0.5.1-alpha — early development / Forever Beta validation required.**
+Status: **0.5.2-alpha — early development / Forever Beta validation required.**
 
 ## Features
 
@@ -11,7 +11,8 @@ Status: **0.5.1-alpha — early development / Forever Beta validation required.*
 - Event-driven updates for login, quests, level, and zone changes; no per-frame quest polling.
 - Compact draggable UI, guide selector, navigation fallback, debug status, and English/Czech UI strings.
 - Development-only Horde and Alliance guides with no invented Forever quest IDs or map coordinates.
-- Developer-only Guide Recorder that captures legitimate quest events, manual waypoints, and notes in a reload-safe temporary route.
+- Zone hierarchy bootstrap tooling that can scan descendants from a verified map root and export static/runtime data separately.
+- Developer-only Guide Recorder that captures legitimate quest events, manual waypoints, and notes in a reload-safe temporary route. It is optional and inactive until explicitly started.
 - Location-independent Development Test Guide for testing UI, controls, reload recovery, and completion state.
 - Dynamic Guide Engine with nested conditions, sections, optional steps, pause/resume, recommendations, and manual guide chaining.
 - Development-category guides are selectable on any character while real incompatible guides remain disabled.
@@ -45,6 +46,15 @@ The target TOC interface is `16001`. Update [VoxarioGuide.toc](VoxarioGuide/Voxa
 | `/vg nav clear` | Clear the temporary active waypoint. |
 | `/vg navhere` | Create a temporary waypoint at the current verified map position. |
 | `/vg location` | Print current map ID and coordinates when available. |
+| `/vg zones ancestors` | Print the verified parent chain for the current map. |
+| `/vg zones scan current` | Scan the current map only. |
+| `/vg zones scan tree <mapID>` | Scan a verified root and its exposed descendants. |
+| `/vg zones scan hierarchy` | Scan a safe verified ancestor of the current map. |
+| `/vg zones status` | Print static, runtime, merged, and last-scan counts. |
+| `/vg zones find <name>` | Search static and runtime zone records. |
+| `/vg zones export` | Export runtime scanned records as deterministic Lua. |
+| `/vg zones export merged` | Export merged static and runtime records as deterministic Lua. |
+| `/vg zones validate` | Validate static and runtime zone record structure. |
 | `/vg step <number>` | Development-safe jump to a valid step in the active guide. |
 | `/vg validate` | Validate registered guide data structure and pending-verification counts. |
 | `/vg record start` | Start recording a temporary development route. |
@@ -60,6 +70,16 @@ The target TOC interface is `16001`. Update [VoxarioGuide.toc](VoxarioGuide/Voxa
 The development-only recorder observes normal player activity and never performs a game action. While `/vg record start` is active, it records quest acceptance, completions found during the guarded `QUEST_LOG_UPDATE` event, and quest turn-ins. Every recorded event stores available map coordinates, level, faction, race, class, timestamp, and order. A small `REC <count>` indicator is visible only while recording.
 
 Recorder data survives reloads, but recording itself is switched **off** on login/reload. Starting it always requires an explicit `/vg record start`; normal guide use never records route data.
+
+## Zone hierarchy database
+
+The Zone Scanner is a **development tool**, not a normal-player requirement. It uses the verified Forever `C_Map.GetMapInfo(uiMapID)` API and, when supported by the client, guarded `C_Map.GetMapChildrenInfo(uiMapID, nil, true)` to discover descendants from a chosen root. If the all-descendants form is unavailable or does not return a table, the addon uses guarded direct-child recursion with duplicate protection, cycle protection, and a 1,000-map safety limit.
+
+`/vg zones ancestors` prints the actual parent chain of the current map. `/vg zones scan hierarchy` chooses the highest non-world ancestor it can verify; when only an overly broad world root is exposed, it stops and asks for an explicit `/vg zones scan tree <mapID>` command.
+
+Runtime discoveries persist in `VoxarioGuideDB.zoneScanner.maps`. Bundled `Data/Zones.lua` remains separate. `/vg zones export` exports runtime records; `/vg zones export merged` produces deterministic map-ID-sorted Lua for developer review before verified data is deliberately copied into `Data/Zones.lua`. The addon has no runtime Wowhead or HTTP dependency.
+
+Normal guide selection, guide progression, navigation, zone lookup, SavedVariables, and UI do not require recorder data. The Guide Selector now uses a bounded scrollable viewport so large guide lists remain contained at supported UI scales.
 
 ## Development Test Guide
 
@@ -77,7 +97,7 @@ Guides with `category = "development"` remain selectable regardless of guide met
 
 Any step may contain `mapID`, normalized `x`/`y` coordinates, and optional `targetName`. When active, it creates the shared waypoint used by the guide window and navigation element. Coordinates are stored internally as `0.0–1.0`; explicit percentage values such as `52.4, 37.8` are normalized to `0.524, 0.378`. Invalid values clear the waypoint safely.
 
-Forever distance and player-facing APIs have not yet been verified for reliable yard/direction calculations. Therefore 0.4.0-alpha displays target labels and coordinates only; it does not fabricate a direction arrow, yard distance, or GO_TO arrival completion. The settings defaults are persisted for future verified implementations, with GO_TO auto-complete disabled.
+Forever distance and player-facing APIs have not yet been verified for reliable yard/direction calculations. Therefore 0.5.2-alpha displays target labels and coordinates only; it does not fabricate a direction arrow, yard distance, or GO_TO arrival completion. The settings defaults are persisted for future verified implementations, with GO_TO auto-complete disabled.
 
 ## Content status
 
