@@ -40,6 +40,8 @@ UI\ZoneExport.lua
 Guides\Alliance\TestRoute.lua
 Guides\Horde\TestRoute.lua
 Guides\Horde\Durotar_01_10.lua
+Guides\Horde\Mulgore_01_10.lua
+Guides\Horde\Silverpine_Forest.lua
 Guides\Development\TestRoute.lua
 Guides\Development\DynamicPart1.lua
 Guides\Development\DynamicPart2.lua
