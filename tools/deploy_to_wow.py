@@ -6,7 +6,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 SOURCE = REPO / "VoxarioGuide"
-TARGET = Path(r"C:\Program Files (x86)\World of Warcraft\_classic\_beta_\Interface\AddOns\VoxarioGuide")
+TARGET = Path(r"C:\Program Files (x86)\World of Warcraft\_classic_beta_\Interface\AddOns\VoxarioGuide")
 RUNTIME_DIRS = ("Core", "Data", "Guides", "Localization", "UI")
 RUNTIME_FILES = ("VoxarioGuide.toc",)
 
