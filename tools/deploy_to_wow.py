@@ -43,11 +43,16 @@ def main():
                 for path in managed.rglob("*"):
                     if path.is_file() and path.relative_to(target) not in expected:
                         path.unlink(); removed += 1; print(f"[REMOVE] {path.relative_to(target)}")
-    toc = target / "VoxarioGuide.toc"
-    generated = target / "Data" / "Generated"
-    print(f"[VERIFY] TOC: {'OK' if toc.is_file() else 'MISSING'}")
-    print(f"[VERIFY] Data/Generated Lua: {len(list(generated.glob('*.lua'))) if generated.is_dir() else 0}")
-    if not toc.is_file(): raise SystemExit("Deployment failed: VoxarioGuide.toc was not copied.")
+    required = (Path("VoxarioGuide.toc"), Path("Data/Generated/Zones.lua"), Path("Data/Generated/Quests.lua"), Path("Data/Generated/NPCs.lua"), Path("Data/Generated/Items.lua"))
+    for relative in required:
+        source, destination = SOURCE / relative, target / relative
+        if not destination.is_file(): raise SystemExit(f"Deployment failed: missing destination {relative}")
+        if source.stat().st_size != destination.stat().st_size: raise SystemExit(f"Deployment failed: size mismatch {relative}")
+        print(f"[VERIFY] {relative}: OK ({destination.stat().st_size} bytes)")
+    source_version = next((line for line in (SOURCE / "VoxarioGuide.toc").read_text().splitlines() if line.startswith("## Version:")), None)
+    target_version = next((line for line in (target / "VoxarioGuide.toc").read_text().splitlines() if line.startswith("## Version:")), None)
+    if not source_version or source_version != target_version: raise SystemExit("Deployment failed: TOC version mismatch")
+    print(f"[VERIFY] TOC version: {target_version}")
     print(f"[DONE] copied: {copied} | unchanged: {unchanged} | removed: {removed} | target: {target}")
 
 if __name__ == "__main__": main()
