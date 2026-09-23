@@ -2,7 +2,7 @@
 
 **Voxario Guide** is a free, open-source, step-by-step leveling and quest-guide addon for **World of Warcraft: Forever**. It advises the player and reacts only to legitimate game state. It never moves a character, selects targets, casts abilities, or performs protected actions.
 
-Status: **0.5.5-alpha — early development / Forever Beta validation required.**
+Status: **0.5.6-alpha — early development / Forever Beta validation required.**
 
 ## Features
 
