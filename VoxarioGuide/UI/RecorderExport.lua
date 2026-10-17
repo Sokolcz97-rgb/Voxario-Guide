@@ -51,5 +51,11 @@ end
 
 function VG:ShowRecorderExport()
     local frame = self:CreateRecorderExportFrame()
-    frame.edit:SetText(self:BuildRecorderExport()); frame.edit:SetHeight(math.max(360, frame.edit:GetStringHeight() + 20)); frame.edit:HighlightText(); frame:Show()
+    local export = self:BuildRecorderExport()
+    if type(export) ~= "string" or export == "" then self:Warn("Recorder export could not be generated."); return end
+    frame.edit:SetText(export)
+    -- EditBox ve Forever klientu nemá GetStringHeight (stejná oprava jako ZoneExport 2436d42).
+    local textHeight = type(frame.edit.GetStringHeight) == "function" and tonumber(frame.edit:GetStringHeight()) or nil
+    frame.edit:SetHeight(math.max(360, (textHeight or 0) + 20))
+    frame:Show(); frame.edit:SetFocus(); frame.edit:HighlightText()
 end
