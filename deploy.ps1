@@ -1,5 +1,12 @@
-$src = "C:\Users\deser\Documents\Github\Voxario-Guide\VoxarioGuide"
-$dst = "C:\Program Files (x86)\World of Warcraft\_classic_beta_\Interface\AddOns\VoxarioGuide"
+param(
+    [string]$Target = "C:\Program Files (x86)\World of Warcraft\_classic_beta_\Interface\AddOns\VoxarioGuide"
+)
+
+$ErrorActionPreference = "Stop"
+# Zdroj je vždy složka VoxarioGuide vedle tohoto skriptu (ne natvrdo cesta jednoho PC).
+$src = Join-Path $PSScriptRoot "VoxarioGuide"
+$dst = $Target
+if (-not (Test-Path (Join-Path $src "VoxarioGuide.toc"))) { throw "Source addon not found: $src" }
 
 New-Item -ItemType Directory -Force -Path $dst | Out-Null
 Copy-Item "$src\VoxarioGuide.toc" "$dst\VoxarioGuide.toc" -Force
